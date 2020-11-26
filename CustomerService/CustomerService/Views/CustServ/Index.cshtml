@@ -1,0 +1,279 @@
+﻿@model CustomerService.ViewModel.CustServViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="m-0 p-0 row">
+    <!-- left side bar -->
+    <div class="col-sm-2 leftside">
+        <div class="cont">
+            <h6 class="pl-3">LIST OF COUNTRY</h6>
+            <ul class="list-unstyled p-2" id="firstside">
+                @foreach (var item in Model.Country)
+                {
+                    <li class="p-2"><button value="@item.Id" id="@item.Id" data-topass="@item.Id" class="btn btn-block"><i class="far fa-flag m-1"></i> @item.Name</button></li>
+                }
+
+            </ul>
+
+        </div>
+    </div>
+    <!-- end left side bar -->
+    <!-- second sidebar -->
+
+    <div class="col-sm-2 middle p-2">
+        <form class="form-group mt-2">
+            <input class="form-control " type="search" placeholder="Search Branch ...." aria-label="Search">
+        </form>
+        <div class="container-fluid">
+
+            <ul class="list-unstyled" id="secondnav">
+            </ul>
+        </div>
+    </div>
+    <!--end second sidebar -->
+    <!-- right side -->
+    <div class="col-sm-8 rightside p-2">
+        <div class="mt-2">
+            <div class="bg-white card-header mb-3">
+                <div class="container">
+                    <h6><i class="fas fa-globe m-1"></i> STATE INFORMATION</h6>
+                </div>
+            </div>
+            <div class="row container mb-3 ml-1">
+                <div class="col-sm-4">
+                    <p>
+                        <i class="fas fa-users m-1"></i>
+                        EMPLOYEES
+                    </p>
+                    <P class="pl-5">15000</P>
+                </div>
+                <div class="col-sm-4">
+                    <p>
+                        <i class="fas fa-store m-1"></i>
+                        BRUNCHES
+                    </p>
+                    <P class="pl-5" id="branchnumber">@Model.Branch.Count()</P>
+                </div>
+                <div class="col-sm-4">
+                    <p><i class="fas fa-user-tie m-1"></i> CUSTOMERS</p>
+                    <p class="pl-5">21305</p>
+                </div>
+            </div>
+            <div class="mb-3">
+                @* Branch *@
+                <div id="accordion" class="branch">
+                    <div class="bg-white mb-4">
+
+                        <div class="bg-white mb-4">
+                            <!--Branch HEADER  -->
+                            <div class="card-header bg-white" id="headingOne">
+                                <div>
+                                    <h5 class="mb-0">
+                                        <a class="btn  btn-xl btn-block" style="background-color: white;text-align: left;color: #989FA5;" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">
+                                            <div class="d-flex">
+                                                <h6 class="mr-auto"><i class="fas fa-store m-1"></i>Dubai MAIN BRANCH</h6>
+                                                <h6 class="badge badge-primary">FROM 06:00 AM TO 09:00 PM</h6>
+                                            </div>
+                                        </a>
+                                    </h5>
+
+                                </div>
+                            </div>
+                            <!--End Branch HEADER  -->
+
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+
+                                <!-- Address -->
+                                <div class="card-body">
+                                    <h6>
+                                        <i class="fas fa-map-marker-alt m-1"></i><b>Address</b>: Dubai MAIN BRANCH str-21
+                                    </h6>
+                                    <hr style="width: 35%;text-align:left;margin-left:0">
+                                    <div>
+                                        <!--End Address -->
+                                        <!--head master  -->
+                                        <div class="info row mt-2">
+
+                                            <div class="col-sm-2">
+                                                <div class="img-box">
+                                                    <img src="img/Andrzej_Person_Kancelaria_Senatu.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <h6 class="pt-2">
+                                                    <i class="fas fa-user-tie m-1"></i><b> BRANCH HEAD MASTER </b>
+
+                                                </h6>
+                                                <div class="d-flex ">
+                                                    <h4 class="mr-auto mt-2">Name of head master</h4>
+                                                    <h5 class="text-success mt-2 mr-2"><i class="fas fa-mobile-alt"></i> 01117390227 </h5>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <!--end head master  -->
+                                        <hr style="width: 35%;text-align:left;margin-left:0">
+                                        <!-- Account head master -->
+                                        <div class="info row mt-2">
+
+                                            <div class="col-sm-2">
+                                                <div class="img-box">
+                                                    <img src="img/0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <h6 class="pt-2">
+                                                    <i class="fas fa-dollar-sign m-1"></i><b> BRANCH Account Master </b>
+
+                                                </h6>
+                                                <div class="d-flex ">
+                                                    <h4 class="mr-auto mt-2">Name of head Accounter</h4>
+                                                    <h5 class="text-success mt-2 mr-2"><i class="fas fa-mobile-alt"></i> 01117390227 </h5>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <!--End Account head master -->
+
+
+                                        <div class="my-4">
+                                            <h6>
+                                                <i class="fas fa-cookie-bite m-1"></i> <b>KITCHEN STAFF</b>
+                                            </h6>
+                                            <hr style="width: 35%;text-align:left;margin-left:0">
+                                        </div>
+                                        <!-- kitchen staff -->
+                                        <div class="info row mt-2">
+
+                                            <div class="col-sm-2">
+                                                <div class="img-box">
+                                                    <img src="img/animal-advocacy-efforts.webp" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <h6 class="pt-2">
+                                                    <i class="fas fa-cookie-bite m-1"></i><b> MASTER CHIFE</b>
+
+                                                </h6>
+                                                <div class="d-flex ">
+                                                    <h4 class="mr-auto mt-2">Name of head Accounter</h4>
+                                                    <h5 class="text-success mt-2 mr-2"><i class="fas fa-mobile-alt"></i> 01117390227 </h5>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="info row mt-2">
+
+                                            <div class="col-sm-2">
+                                                <div class="img-box">
+                                                    <img src="img/Beautiful Photography Ultra HD 4K Wallpapers (39).jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <h6 class="pt-2">
+                                                    <i class="fas fa-cookie-bite m-1"></i><b> CHIFE</b>
+
+                                                </h6>
+                                                <div class="d-flex ">
+                                                    <h4 class="mr-auto mt-2">Name of head Accounter</h4>
+                                                    <h5 class="text-success mt-2 mr-2"><i class="fas fa-mobile-alt"></i> 01117390227 </h5>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="info row mt-2">
+
+                                            <div class="col-sm-2">
+                                                <div class="img-box">
+                                                    <img src="img/Beautiful Photography Ultra HD 4K Wallpapers (38).jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <h6 class="pt-2">
+                                                    <i class="fas fa-cookie-bite m-1"></i><b> CHIFE</b>
+
+                                                </h6>
+                                                <div class="d-flex ">
+                                                    <h4 class="mr-auto mt-2">Name of head Accounter</h4>
+                                                    <h5 class="text-success mt-2 mr-2"><i class="fas fa-mobile-alt"></i> 01117390227 </h5>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <div class="info row mt-2">
+
+                                            <div class="col-sm-2">
+                                                <div class="img-box">
+                                                    <img src="img/Beautiful Photography Ultra HD 4K Wallpapers (40).jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <h6 class="pt-2">
+                                                    <i class="fas fa-user-tie m-1"></i><b>BRANCH Account Master </b>
+
+                                                </h6>
+                                                <div class="d-flex ">
+                                                    <h4 class="mr-auto mt-2">Name of head Accounter</h4>
+                                                    <h5 class="text-success mt-2 mr-2"><i class="fas fa-mobile-alt"></i> 01117390227 </h5>
+                                                </div>
+                                            </div>
+
+
+
+                                        </div>
+                                        <!-- kitchen staff -->
+
+                                        <div class="my-4">
+                                            <h6>
+                                                <i class="fas fa-cookie-bite"></i> <b>KITCHEN STAFF</b>
+                                            </h6>
+                                            <hr style="width: 35%;text-align:left;margin-left:0">
+                                        </div>
+                                        <div class="info row">
+
+                                            <div class="col-sm-2">
+                                                <div class="img-box">
+                                                    <img src="img/Beautiful Photography Ultra HD 4K Wallpapers (39).jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-10">
+                                                <h6 class="pt-2">
+                                                    <i class="fas fa-user-tie m-1"></i><b>BRANCH Account Master </b>
+
+                                                </h6>
+                                                <div class="d-flex ">
+                                                    <h4 class="mr-auto mt-2">Name of head Accounter</h4>
+                                                    <h5 class="text-success mt-2 mr-2"><i class="fas fa-mobile-alt"></i> 01117390227 </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                @* End Branch *@
+
+            </div>
+    </div>
+    <!--end right side -->
+    <div class="names">
+        
+    </div>
+</div>
+
+@Html.Partial("_BindingPartialView")
