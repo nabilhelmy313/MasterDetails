@@ -49,19 +49,42 @@ namespace Entry
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            int id =Convert.ToInt32(lblcityid.Content);
-            var city = db.Cities.Where(c => c.Id == id).FirstOrDefault();
-            DateTime d1 =DateTime.Parse(combostart.SelectedItem.ToString());
-            DateTime d2 = DateTime.Parse(comboend.SelectedItem.ToString());
-            var cust = new Branch
+            try
             {
-                Name = txtname.Text,
-                Address = txtaddress.Text,
-                StartTime =d1,
-                EndTime=d2,
-                City=city
-                
-            };
+                int id = Convert.ToInt32(lblcityid.Content);
+                string time1 = combostart.Text.ToString();
+                string date1 = DateTime.Now.Date.ToString("d");
+                DateTime datetime1 = DateTime.Parse(date1 + " " + time1);
+
+                string time2 = comboend.Text.ToString();
+                string date2 = DateTime.Now.Date.ToString("d");
+                DateTime datetime2 = DateTime.Parse(date2 + " " + time2);
+
+                var city = db.Cities.Where(c => c.Id == id).FirstOrDefault();
+
+                var bran = new Branch
+                {
+                    Name = txtname.Text,
+                    Address = txtaddress.Text,
+                    StartTime = datetime1,
+                    EndTime = datetime2,
+                    City = city
+
+                };
+                db.Branches.Add(bran);
+                db.SaveChanges();
+                MessageBox.Show("YOU SAVE Branch SUCCESSFULLY", "SUCCESS", MessageBoxButton.OK, MessageBoxImage.Information);
+                addbranch addbranch = new addbranch();
+                addbranch.Show();
+                Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            
+
         }
 
         private void combocountry_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -88,6 +111,20 @@ namespace Entry
         private void combocity_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             lblcityid.Content = combocity.SelectedValue;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            addbranch addbranch = new addbranch();
+            addbranch.Show();
+            Close();
+        }
+
+        private void btnemp_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            Close();
         }
     }
 }

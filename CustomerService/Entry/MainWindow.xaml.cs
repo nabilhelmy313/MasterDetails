@@ -82,7 +82,9 @@ namespace Entry
                 db.Employees.Add(addemp);
                 db.SaveChanges();
                 MessageBox.Show("YOU SAVE EMPLOYEE SUCCESSFULLY","SUCCESS",MessageBoxButton.OK,MessageBoxImage.Information);
-
+                MainWindow main = new MainWindow();
+                main.Show();
+                Close();
             }
             catch (Exception ex)
             {
@@ -120,6 +122,14 @@ namespace Entry
         {
             addbranch a = new addbranch();
             a.Show();
+            Close();
+        }
+
+        private void btnemp_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            Close();
         }
     }
 }

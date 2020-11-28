@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Entry"
         mc:Ignorable="d"
-        Title="addbranch" Height="483.566" Width="352.098">
-    <Grid>
-        <ComboBox x:Name="combocountry" HorizontalAlignment="Left" Margin="111,55,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combocountry_SelectionChanged"/>
-        <ComboBox x:Name="combocity" HorizontalAlignment="Left" Margin="111,103,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="combocity_SelectionChanged"/>
-        <ComboBox x:Name="combostart" HorizontalAlignment="Left" IsEditable="True" Margin="133,209,0,0" VerticalAlignment="Top" Width="120" PreviewTextInput="ComboBox_PreviewTextInput">
+        Title="addbranch" Height="803.073" Width="503.029" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFFBFBFB">
+        <ComboBox x:Name="combocountry" HorizontalAlignment="Left" Margin="157,156,0,0" VerticalAlignment="Top" Width="310" SelectionChanged="combocountry_SelectionChanged" FontSize="14" Height="35"/>
+        <ComboBox x:Name="combocity" HorizontalAlignment="Left" Margin="157,239,0,0" VerticalAlignment="Top" Width="310" SelectionChanged="combocity_SelectionChanged" FontSize="14" Height="35"/>
+        <ComboBox x:Name="combostart" HorizontalAlignment="Left" IsEditable="True" Margin="157,406,0,0" VerticalAlignment="Top" Width="310" PreviewTextInput="ComboBox_PreviewTextInput" FontSize="14" Height="35">
             <ComboBoxItem Content="00:30" HorizontalAlignment="Left" Width="118.4"/>
             <ComboBoxItem Content="01:00" HorizontalAlignment="Left" Width="118.4"/>
             <ComboBoxItem Content="01:30" HorizontalAlignment="Left" Width="118.4"/>
@@ -60,7 +60,7 @@
 
 
         </ComboBox>
-        <ComboBox x:Name="comboend" HorizontalAlignment="Left" IsEditable="True" Margin="133,256,0,0" VerticalAlignment="Top" Width="120" PreviewTextInput="ComboBox_PreviewTextInput">
+        <ComboBox x:Name="comboend" HorizontalAlignment="Left" IsEditable="True" Margin="157,489,0,0" VerticalAlignment="Top" Width="310" PreviewTextInput="ComboBox_PreviewTextInput" FontSize="14" Height="35">
             <ComboBoxItem Content="00:30" HorizontalAlignment="Left" Width="118.4"/>
             <ComboBoxItem Content="01:00" HorizontalAlignment="Left" Width="118.4"/>
             <ComboBoxItem Content="01:30" HorizontalAlignment="Left" Width="118.4"/>
@@ -111,17 +111,29 @@
 
 
         </ComboBox>
-        <Label Content="COUNTRY" HorizontalAlignment="Left" Margin="25,60,0,0" VerticalAlignment="Top"/>
-        <Label Content="CITY" HorizontalAlignment="Left" Margin="55,103,0,0" VerticalAlignment="Top"/>
-        <Label Content="START TIME" HorizontalAlignment="Left" Margin="77,202,0,0" VerticalAlignment="Top"/>
-        <Label Content="END TIME" HorizontalAlignment="Left" Margin="77,256,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Height="23" Margin="134,316,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="ADRESS" HorizontalAlignment="Left" Margin="77,316,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="122,373,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-        <Label x:Name="lblcityid" Content="Label" HorizontalAlignment="Left" Margin="261,55,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblcontryid" Content="Label" HorizontalAlignment="Left" Margin="281,103,0,0" VerticalAlignment="Top"/>
-        <Label Content="name" HorizontalAlignment="Left" Margin="77,155,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="23" Margin="121,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="COUNTRY" HorizontalAlignment="Left" Margin="24,156,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="CITY" HorizontalAlignment="Left" Margin="24,239,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="START TIME" HorizontalAlignment="Left" Margin="24,412,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="END TIME" HorizontalAlignment="Left" Margin="24,495,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Height="35" Margin="157,573,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" FontSize="14"/>
+        <Label Content="ADDRESS" HorizontalAlignment="Left" Margin="24,579,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button Content="SAVE BRANCH" HorizontalAlignment="Left" Margin="157,672,0,0" VerticalAlignment="Top" Width="310" Background="#FF17A2B8" FontSize="18" Foreground="White" FontWeight="Bold" Click="Button_Click" Height="56"/>
+        <Label x:Name="lblcityid" Content="Label" HorizontalAlignment="Left" Margin="336,357,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label x:Name="lblcontryid" Content="Label" HorizontalAlignment="Left" Margin="356,405,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label Content="NAME" HorizontalAlignment="Left" Margin="24,328,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="35" Margin="157,322,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" FontSize="14"/>
+        <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Click="Button_Click_2" Height="68" Background="#FFF2F2F2" BorderBrush="White">
+            <Grid>
+                <Image Source="shop.png" Height="52" Margin="-64,0,87.8,0" />
+                <Label Content="ADD BRANCH" FontSize="16" Margin="26,10,-26.2,10" VerticalAlignment="Center" />
+            </Grid>
+        </Button>
+        <Button x:Name="btnemp" HorizontalAlignment="Left" Margin="250,0,-0.2,0" VerticalAlignment="Top" Width="247" Height="68" Background="#FFF2F2F2" BorderBrush="White" Click="btnemp_Click">
+            <Grid Width="237">
+                <Image Source="add-user.png" Margin="10,10,174,-0.2" />
+                <Label Content="ADD EMPLOYEE" Margin="83,18,34,9.8" FontSize="16" Height="37" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </Button>
 
     </Grid>
 </Window>
