@@ -57,6 +57,7 @@ namespace Entry
         {
             if (string.IsNullOrWhiteSpace(txtName.Text)|| combobranch.SelectedIndex==-1 || combodept.SelectedIndex==-1)
             {
+                MessageBox.Show("Please Enter Branch , Department and Name","Error",MessageBoxButton.OK,MessageBoxImage.Error);
                 return;
             }
 

@@ -51,6 +51,11 @@ namespace Entry
         {
             try
             {
+                if (string.IsNullOrWhiteSpace(txtname.Text) || combocountry.SelectedIndex == -1 || combocity.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Please Enter Branch Name , Country and City", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    return;
+                }
                 int id = Convert.ToInt32(lblcityid.Content);
                 string time1 = combostart.Text.ToString();
                 string date1 = DateTime.Now.Date.ToString("d");
@@ -68,6 +73,7 @@ namespace Entry
                     Address = txtaddress.Text,
                     StartTime = datetime1,
                     EndTime = datetime2,
+                    Phone1=txtphone.Text,
                     City = city
 
                 };
@@ -125,6 +131,12 @@ namespace Entry
             MainWindow main = new MainWindow();
             main.Show();
             Close();
+        }
+
+        private void txtaddress_Copy_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            e.Handled = new Regex("[^0-9-+]+").IsMatch(e.Text);
+
         }
     }
 }
