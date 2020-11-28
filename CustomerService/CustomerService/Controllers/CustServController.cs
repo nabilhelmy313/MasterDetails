@@ -2,6 +2,7 @@
 using CustomerService.ViewModel;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -15,7 +16,6 @@ namespace CustomerService.Controllers
         // GET: CustServ
         public ActionResult Index()
         {
-
             CustServViewModel country = new CustServViewModel
             {
                 Country = db.Countries.ToList(),
@@ -23,7 +23,6 @@ namespace CustomerService.Controllers
                 Branch = db.Branches.ToList(),
                 Employees = db.Employees.ToList()
             };
-            ViewBag.con = db.Countries.ToList();
             return View(country);
         }
         public JsonResult GetCities(int id)
@@ -41,7 +40,6 @@ namespace CustomerService.Controllers
             var branches = new CustServViewModel
             {
                 Branch = db.Branches.Where(b => b.City.Id == id).ToList(),
-                
             };
             List<CustServViewModel> custServs = new List<CustServViewModel>();
             List<Branch> bran = new List<Branch>();
@@ -58,7 +56,7 @@ namespace CustomerService.Controllers
                     Phone1=bran[i].Phone1,
                     Phone2=bran[i].Phone2,
                     BranchNumber=bran.Count()
-                });
+                });;
             }
             return Json(custServs, JsonRequestBehavior.AllowGet);
         }
@@ -66,7 +64,8 @@ namespace CustomerService.Controllers
         {
             CustServViewModel employee = new CustServViewModel()
             {
-                Employees = db.Employees.Where(c => c.Branch.Id == id).ToList()
+                
+                Employees = db.Employees.Include(ee=>ee.Department).Where(c => c.Branch.Id == id).OrderBy(e=>e.Department.Name).ToList()
             };
             List<CustServViewModel> list = new List<CustServViewModel>();
             List<Employee> Emp = new List<Employee>();
@@ -79,7 +78,8 @@ namespace CustomerService.Controllers
                     EmpPhone1=Emp[i].Phone1,
                     EmpPhone2=Emp[i].Phone2,
                     EmpPhoto=Emp[i].Photo,
-                    EmpRole=Emp[i].Role
+                    EmpRole=Emp[i].Role,
+                    EmpDept=Emp[i].Department.Name,
                 });
             }
             return Json(list,JsonRequestBehavior.AllowGet);

@@ -76,14 +76,10 @@ D:\Courses\new tasks\CustomerService\CustomerService\bin\System.Web.WebPages.Raz
 D:\Courses\new tasks\CustomerService\CustomerService\bin\Newtonsoft.Json.xml
 D:\Courses\new tasks\CustomerService\CustomerService\bin\Antlr3.Runtime.pdb
 D:\Courses\new tasks\CustomerService\CustomerService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.initialmigrate.resources
-D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.secondmigrate.resources
-D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.GenerateResource.cache
 D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.CoreCompileInputs.cache
 D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.CopyComplete
 D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.dll
 D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.pdb
 D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.csprojAssemblyReference.cache
-D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.updatetimespantodatetime.resources
-D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.adddepartment.resources
-D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.updateemprelation.resources
+D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.initial.resources
+D:\Courses\new tasks\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.GenerateResource.cache

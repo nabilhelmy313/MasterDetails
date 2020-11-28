@@ -133,25 +133,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011220126120_initialmigrate.cs" />
-    <Compile Include="Migrations\202011220126120_initialmigrate.designer.cs">
-      <DependentUpon>202011220126120_initialmigrate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011220129406_secondmigrate.cs" />
-    <Compile Include="Migrations\202011220129406_secondmigrate.designer.cs">
-      <DependentUpon>202011220129406_secondmigrate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011250752378_updatetimespantodatetime.cs" />
-    <Compile Include="Migrations\202011250752378_updatetimespantodatetime.designer.cs">
-      <DependentUpon>202011250752378_updatetimespantodatetime.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011251315066_adddepartment.cs" />
-    <Compile Include="Migrations\202011251315066_adddepartment.designer.cs">
-      <DependentUpon>202011251315066_adddepartment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202011251351034_update-emprelation.cs" />
-    <Compile Include="Migrations\202011251351034_update-emprelation.designer.cs">
-      <DependentUpon>202011251351034_update-emprelation.cs</DependentUpon>
+    <Compile Include="Migrations\202011261426200_initial.cs" />
+    <Compile Include="Migrations\202011261426200_initial.designer.cs">
+      <DependentUpon>202011261426200_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppDbContext.cs" />
@@ -169,11 +153,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Css\main.css" />
-    <Content Include="Content\img\0b7f4e9b-f59c-4024-9f06-b3dc12850ab7-1920-1080.jpg" />
+    <Content Include="Content\img\Screenshot %2811%29.png" />
     <Content Include="Content\img\Andrzej_Person_Kancelaria_Senatu.jpg" />
     <Content Include="Content\img\Beautiful Photography Ultra HD 4K Wallpapers %2838%29.jpg" />
     <Content Include="Content\img\Beautiful Photography Ultra HD 4K Wallpapers %2839%29.jpg" />
-    <Content Include="Content\img\Beautiful Photography Ultra HD 4K Wallpapers %2840%29.jpg" />
+    <Content Include="Content\img\1.jpg" />
     <Content Include="Content\img\Beautiful Photography Ultra HD 4K Wallpapers %2841%29.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -232,20 +216,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011220126120_initialmigrate.resx">
-      <DependentUpon>202011220126120_initialmigrate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011220129406_secondmigrate.resx">
-      <DependentUpon>202011220129406_secondmigrate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011250752378_updatetimespantodatetime.resx">
-      <DependentUpon>202011250752378_updatetimespantodatetime.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011251315066_adddepartment.resx">
-      <DependentUpon>202011251315066_adddepartment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011251351034_update-emprelation.resx">
-      <DependentUpon>202011251351034_update-emprelation.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202011261426200_initial.resx">
+      <DependentUpon>202011261426200_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

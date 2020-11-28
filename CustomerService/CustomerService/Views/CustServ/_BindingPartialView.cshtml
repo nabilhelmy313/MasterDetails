@@ -1,5 +1,6 @@
-﻿<script type="text/javascript">
-    //Bind City dropdownlist
+﻿
+<script type="text/javascript">
+    //Bind City 
 
     $("#firstside li button").click(function () {
         var id = $(this).attr('data-topass');
@@ -11,7 +12,7 @@
             var item = "";
             $("#secondnav").empty();
             $.each(data, function (i, city) {
-                item += '<li class="p-2"><button class="btn btn-block" data-topass="' + city.Id + '"value="' + city.Id + '">' + city.Name + '</button></li>'
+                item += '<li class="p-2"><button class="btn btn-block" id="' + city.Id + '" data-topass="' + city.Id + '" value="' + city.Id + '">' + city.Name + '</button></li>'
             });
             $("#secondnav").html(item);
             //bind Bransches
@@ -24,25 +25,28 @@
                 $.getJSON(url, { Id: cityid }, function (data) {
                     var item = "";
                     var item2 = "";
+                    var item3 = "";
                     $("#branchnumber").empty();
                     $(".branch").empty();
                     $.each(data, function (i, branch) {
                         item +=
                             '<div class="card-header bg-white">' +
-                            ' <div>' +
+                                ' <div>' +
                         '<h5 class="mb-0">' +
-                        ' <button data-topass="' + branch.ID + '" data-target="#b' + branch.ID + '" class="btn branchheader  btn-xl btn-block" style="background-color: white;text-align: left;color: #989FA5;" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="' + branch.ID + '">' +
-                            ' <div class="d-flex">' +
-                        '<h6 class="mr-auto"><i class="fas fa-store m-1"></i>' + branch.Name + '</h6>' +
-                        '<h6 class="badge badge-warning mr-3"><i class="fas fa-map-marker-alt m-1" ></i >' + branch.Address + '</h6 >'+
-                            '<h6 class="badge badge-primary"><i class="far fa-clock m-1"></i> FROM ' + branch.StartTime + ' TO ' + branch.EndTime + '</h6> ' +
-                            ' </div>' +
-                            '</button>' +
-                            ' </h5>' +
+                        ' <button id="' + branch.ID + '" value="' + branch.ID + '" data-topass="' + branch.ID + '" data-target="#b' + branch.ID + '" class="btn branchheader  btn-xl btn-block" style="background-color: white;text-align: left;color: #989FA5;" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="' + branch.ID + '">' +
+                                            ' <div class="d-flex">' +
+                                                '<h6 class="mr-auto"><i class="fas fa-store m-1"></i>' + branch.Name + '</h6>' +
+                                                '<h6 class="badge badge-warning mr-3"><i class="fas fa-map-marker-alt m-1" ></i >' + branch.Address + '</h6 >'+
+                                                '<h6 class="badge badge-primary"><i class="far fa-clock m-1"></i> FROM ' + branch.StartTime + ' TO ' + branch.EndTime + '</h6> ' +
+                                            ' </div>' +
+                                        '</button>' +
+                                    '</h5>' +
 
-                            ' </div>' +
-                            '</div>';
-
+                                ' </div>' +
+                        '</div>' +
+                        '<div id="b' + branch.ID + '" class="collapse branchcontent" aria-labelledby="b' + branch.ID + '" data-parent="#accordion">'+
+                            ' <h3> empty branch</h3>' +
+                         '</div>';
                         item2 = branch.BranchNumber;
                     });
                     $(".branch").html(item);
@@ -53,11 +57,40 @@
                         var url = "/CustServ/GetEmps";
                         $.getJSON(url, { Id: branchid }, function (data) {
                             var item = "";
-                            $(".names").empty();
+                            $(".branchcontent").empty();
                             $.each(data, function (i, emp) {
-                                item += "<h4>" + emp.EmpName + "</h4>";
+                                if (item == null) {
+                                    item += "<h4> Empty Branch</h4>";
+                                } else {
+                                    item += '<div class="my-4">' +
+                                        
+                                        ' <i class="fas fa-user-tie m-1"></i> <b>' + emp.EmpDept + '</b>' +
+                                        ' <hr style="width: 35%;text-align:left;margin-left:0">' +
+                                        '</div>' +
+                                        '    <div class="info row mt-2">' +
+
+                                        '      <div class="col-sm-2">' +
+                                        '         <div class="img-box">' +
+                                        '    <img src="~/Content/img/Beautiful Photography Ultra HD 4K Wallpapers (39).jpg" /> ' +
+                                        '</div>' +
+                                        '  </div>' +
+                                        ' <div class="col-sm-10">' +
+                                        '  <h6 class="pt-2">' +
+                                        '   <i class="fas fa-user-tie m-1"></i><b>' + emp.EmpRole + '</b>' +
+
+                                           '</h6>' +
+                                        '<div class="d-flex ">' +
+                                        ' <h4 class="mr-auto mt-2">'+emp.EmpName+'</h4>' +
+                                        ' <h4 class="mt-2 mr-2"> <span class="badge badge-info"><i class="fas fa-mobile-alt"></i> '+emp.EmpPhone1+'</span> </h4>' +
+                                        ' </div>' +
+                                        ' </div>' +
+
+
+
+                                        ' </div>';
+                                }
                             });
-                            $(".names").html(item);
+                            $(".branchcontent").html(item);
                         });
                     });
                 });

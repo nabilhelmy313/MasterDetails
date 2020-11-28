@@ -27,5 +27,6 @@ namespace CustomerService.ViewModel
         public string EmpPhone2 { get; internal set; }
         public string EmpPhoto { get; internal set; }
         public string EmpRole { get; internal set; }
+        public string EmpDept { get; internal set; }
     }
 }
