@@ -1,6 +1,6 @@
 
 .leftside{
-    background-color:#F2F2F2;
+    
     color: #6A737C;
     display: inline-block;
 	vertical-align: top;
@@ -8,9 +8,7 @@
 	overflow: auto;
 
 }
-.cont li:hover{
-    background-color: white;
-}
+
 /* middle */
 .middle{
     background-color: #f8f8f8;
@@ -49,4 +47,16 @@
 }
 /* end right side */
 
+.cat{
+    border-radius: 10px;
+}
+.shortcut{
+    background-color: #F2F2F2;
+}
 
+.cut{
+    border-radius: 20px;
+}
+.quest{
+    background-color: #f8f8f8;
+}
