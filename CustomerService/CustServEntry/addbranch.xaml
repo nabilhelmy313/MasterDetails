@@ -1,0 +1,143 @@
+﻿<Window x:Class="CustServEntry.addbranch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CustServEntry"
+        mc:Ignorable="d"
+         Title="addbranch" Height="746.073" Width="1048.204" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFFBFBFB">
+        <ComboBox x:Name="combocountry" HorizontalAlignment="Left" Margin="157,86,0,0" VerticalAlignment="Top" Width="310" SelectionChanged="combocountry_SelectionChanged" FontSize="14" Height="34"/>
+        <ComboBox x:Name="combocity" HorizontalAlignment="Left" Margin="157,148,0,0" VerticalAlignment="Top" Width="310" SelectionChanged="combocity_SelectionChanged" FontSize="14" Height="36"/>
+        <ComboBox x:Name="combostart" HorizontalAlignment="Left" IsEditable="True" Margin="157,291,0,0" VerticalAlignment="Top" Width="310" PreviewTextInput="ComboBox_PreviewTextInput" FontSize="14" Height="34">
+            <ComboBoxItem Content="00:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="00:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="01:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="01:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="02:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="02:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="03:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="03:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="04:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="04:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="05:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="05:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="06:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="06:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="07:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="07:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="08:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="08:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="09:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="09:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="10:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="10:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="11:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="11:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="12:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="12:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="13:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="13:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="14:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="14:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="15:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="15:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="16:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="16:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="17:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="17:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="18:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="18:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="19:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="19:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="20:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="20:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="21:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="21:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="22:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="22:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="23:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="23:30" HorizontalAlignment="Left"/>
+
+
+        </ComboBox>
+        <ComboBox x:Name="comboend" HorizontalAlignment="Left" IsEditable="True" Margin="157,379,0,0" VerticalAlignment="Top" Width="310" PreviewTextInput="ComboBox_PreviewTextInput" FontSize="14" Height="36">
+            <ComboBoxItem Content="00:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="01:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="01:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="02:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="02:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="03:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="03:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="04:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="04:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="05:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="05:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="06:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="06:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="07:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="07:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="08:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="08:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="09:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="09:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="10:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="10:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="11:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="11:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="12:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="12:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="13:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="13:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="14:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="14:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="15:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="15:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="16:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="16:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="17:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="17:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="18:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="18:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="19:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="19:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="20:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="20:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="21:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="21:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="22:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="22:30" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="23:00" HorizontalAlignment="Left"/>
+            <ComboBoxItem Content="23:30" HorizontalAlignment="Left"/>
+
+
+        </ComboBox>
+        <Label Content="COUNTRY" HorizontalAlignment="Left" Margin="24,86,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="CITY" HorizontalAlignment="Left" Margin="24,148,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="START TIME" HorizontalAlignment="Left" Margin="24,297,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="END TIME" HorizontalAlignment="Left" Margin="24,385,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Height="36" Margin="157,462,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" FontSize="14"/>
+        <Label Content="ADDRESS" HorizontalAlignment="Left" Margin="24,468,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Button Content="SAVE BRANCH" HorizontalAlignment="Left" Margin="157,620,0,0" VerticalAlignment="Top" Width="310" Background="#FF17A2B8" FontSize="18" Foreground="White" FontWeight="Bold" Click="Button_Click" Height="56"/>
+        <Label x:Name="lblcityid" Content="Label" HorizontalAlignment="Left" Margin="336,357,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label x:Name="lblcontryid" Content="Label" HorizontalAlignment="Left" Margin="356,405,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <Label Content="NAME" HorizontalAlignment="Left" Margin="24,218,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Height="34" Margin="157,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" FontSize="14"/>
+        <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Click="Button_Click_2" Height="68" Background="#FFF2F2F2" BorderBrush="White">
+            <Grid>
+                <Image Source="shop.png" Height="52" Margin="-64,0,87.8,0" />
+                <Label Content="ADD BRANCH" FontSize="16" Margin="26,10,-26.2,10" VerticalAlignment="Center" />
+            </Grid>
+        </Button>
+        <Button x:Name="btnemp" HorizontalAlignment="Left" Margin="250,0,-0.2,0" VerticalAlignment="Top" Width="247" Height="68" Background="#FFF2F2F2" BorderBrush="White" Click="btnemp_Click">
+            <Grid Width="237">
+                <Image Source="add-user.png" Margin="10,10,174,-0.2" />
+                <Label Content="ADD EMPLOYEE" Margin="83,18,34,9.8" FontSize="16" Height="37" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+        </Button>
+        <Label Content="PHONE" HorizontalAlignment="Left" Margin="24,540,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txtphone" HorizontalAlignment="Left" Height="34" Margin="157,534,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" FontSize="14" PreviewTextInput="txtaddress_Copy_PreviewTextInput"/>
+        <DataGrid HorizontalAlignment="Left" Height="100" Margin="578,77,0,0" VerticalAlignment="Top" Width="100"/>
+
+    </Grid>
+</Window>

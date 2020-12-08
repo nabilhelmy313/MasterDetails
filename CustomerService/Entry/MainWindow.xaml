@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Entry"
         mc:Ignorable="d"
-        Title="Add Employee" Height="803.073" Width="503.029" WindowStartupLocation="CenterScreen">
+        Title="Add Employee" Height="746.073" Width="1048.204" WindowStartupLocation="CenterScreen">
     <Grid Background="#FFFBFBFB">
-        <Button Content="ADD EMPLOYEE" HorizontalAlignment="Left" Margin="153,699,0,0" VerticalAlignment="Top" Width="310" Click="Button_Click" Height="56" Background="#FF17A2B8" FontSize="18" Foreground="White" FontWeight="Bold"/>
-        <ComboBox x:Name="combodept" HorizontalAlignment="Left" Margin="153,276,0,0" VerticalAlignment="Top" Width="310" Height="36" SelectionChanged="combodept_SelectionChanged" SelectedIndex="0" FontSize="14">
+        <Button x:Name="btnadd" Content="ADD EMPLOYEE" HorizontalAlignment="Left" Margin="153,640,0,0" VerticalAlignment="Top" Width="277" Click="Button_Click" Height="56" Background="#FF17A2B8" FontSize="18" Foreground="White" FontWeight="Bold"/>
+        <ComboBox x:Name="combodept" HorizontalAlignment="Left" Margin="153,232,0,0" VerticalAlignment="Top" Width="277" Height="36" SelectionChanged="combodept_SelectionChanged" SelectedIndex="0" FontSize="14">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -17,16 +17,16 @@
             </ComboBox.Background>
         </ComboBox>
         <Label x:Name="lblid" Content="Label" HorizontalAlignment="Left" Margin="409,438,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.703,-2.387" Visibility="Hidden"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="35" Margin="153,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
-        <TextBox x:Name="txtphone1" HorizontalAlignment="Left" Height="35" Margin="153,480,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
-        <TextBox x:Name="txtphone2" HorizontalAlignment="Left" Height="35" Margin="153,558,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310" RenderTransformOrigin="-0.212,0.77"/>
-        <TextBox x:Name="txtrole" HorizontalAlignment="Left" Height="35" Margin="153,629,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="310"/>
-        <Label Content="PHONE 1" HorizontalAlignment="Left" Margin="31,480,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="PHONE 2" HorizontalAlignment="Left" Margin="31,564,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="RROLE" HorizontalAlignment="Left" Margin="31,635,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label x:Name="txtImagePath" Content="" HorizontalAlignment="Left" Margin="250,80,0,0" VerticalAlignment="Top" Width="216" FontSize="10"/>
-        <Label Content="NAME" HorizontalAlignment="Left" Margin="31,418,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <ComboBox x:Name="combobranch" HorizontalAlignment="Left" IsEditable="True" Margin="153,343,0,0" VerticalAlignment="Top" Width="310" Height="35" SelectionChanged="combobranch_SelectionChanged" FontSize="14" >
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="36" Margin="153,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277"/>
+        <TextBox x:Name="txtphone1" HorizontalAlignment="Left" Height="36" Margin="153,436,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277"/>
+        <TextBox x:Name="txtphone2" HorizontalAlignment="Left" Height="36" Margin="153,514,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277" RenderTransformOrigin="-0.212,0.77"/>
+        <TextBox x:Name="txtrole" HorizontalAlignment="Left" Height="34" Margin="153,586,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="277"/>
+        <Label Content="PHONE 1" HorizontalAlignment="Left" Margin="31,436,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="PHONE 2" HorizontalAlignment="Left" Margin="31,520,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="RROLE" HorizontalAlignment="Left" Margin="31,592,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="txtImagePath" Content="" HorizontalAlignment="Left" Margin="214,70,0,0" VerticalAlignment="Top" Width="216" FontSize="10"/>
+        <Label Content="NAME" HorizontalAlignment="Left" Margin="31,374,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <ComboBox x:Name="combobranch" HorizontalAlignment="Left" IsEditable="True" Margin="153,300,0,0" VerticalAlignment="Top" Width="277" Height="34" SelectionChanged="combobranch_SelectionChanged" FontSize="14" >
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -35,29 +35,33 @@
             </ComboBox.Background>
         </ComboBox>
         <Label x:Name="lblbid" Content="Label" HorizontalAlignment="Left" Margin="409,500,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
-        <Button HorizontalAlignment="Left" Margin="282,197,0,0" VerticalAlignment="Top" Width="165" Click="Button_Click_1" Height="30">
+        <Button HorizontalAlignment="Left" Margin="265,187,0,0" VerticalAlignment="Top" Width="165" Click="Button_Click_1" Height="30">
             <Grid>
                 <Image Source="/add.png" Margin="-10,0,92.6,0.2" />
                 <Label Content="BROWSE..." Margin="50,0,-0.4,-0.2"></Label>
             </Grid>
         </Button>
-        <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="250" Click="Button_Click_2" Height="68" Background="#FFF2F2F2" BorderBrush="White">
+        <Button  HorizontalAlignment="Left" VerticalAlignment="Top" Width="216" Click="Button_Click_2" Height="54" Background="#FFF2F2F2" BorderBrush="White">
             <Grid>
                 <Image Source="/shop.png" Height="52" Margin="-64,0,87.8,0" />
                 <Label Content="ADD BRANCH" FontSize="16" Margin="26,10,-26.2,10" VerticalAlignment="Center" />
             </Grid>
         </Button>
-        <Button x:Name="btnemp" HorizontalAlignment="Left" Margin="250,0,-0.2,0" VerticalAlignment="Top" Width="247" Height="68" Background="#FFF2F2F2" BorderBrush="White" Click="btnemp_Click">
+        <Button x:Name="btnemp" HorizontalAlignment="Left" Margin="218,2,0,0" VerticalAlignment="Top" Width="214" Height="54" Background="#FFF2F2F2" BorderBrush="White" Click="btnemp_Click">
             <Grid Width="237">
                 <Image Source="/add-user.png" Margin="10,10,174,-0.2" />
                 <Label Content="ADD EMPLOYEE" Margin="83,18,34,9.8" FontSize="16" Height="37" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
         </Button>
-        <Label Content="DEPARTMENT" HorizontalAlignment="Left" Margin="31,276,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Label Content="BRANCH" HorizontalAlignment="Left" Margin="31,349,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="147" Margin="31,80,0,0" VerticalAlignment="Top" Width="172">
+        <Label Content="DEPARTMENT" HorizontalAlignment="Left" Margin="31,232,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="BRANCH" HorizontalAlignment="Left" Margin="31,306,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="147" Margin="31,70,0,0" VerticalAlignment="Top" Width="172">
             <Image x:Name="imgemp" HorizontalAlignment="Left" Height="147" Margin="-0.8,-0.8,-0.8,-0.6" VerticalAlignment="Top" Width="172" Stretch="Fill"/>
         </Border>
+        <DataGrid x:Name="dg" HorizontalAlignment="Left" Height="551" Margin="447,45,0,0" VerticalAlignment="Top" Width="583" SelectionChanged="dg_SelectionChanged"/>
+        <Button x:Name="btnupdate" Content="Update" HorizontalAlignment="Left" Margin="447,640,0,0" VerticalAlignment="Top" Width="252" Height="56" FontSize="18" Background="#FF67B45F" Foreground="White" FontWeight="Bold" IsEnabled="False" Click="btnupdate_Click"/>
+        <Button x:Name="btndelete" Content="DELETE" HorizontalAlignment="Left" Margin="740,640,0,0" VerticalAlignment="Top" Width="290" Height="56" FontSize="18" Foreground="White" Background="#FFB43434" FontWeight="Bold" IsEnabled="False"/>
+        <TextBox x:Name="txtid" HorizontalAlignment="Left" Height="22" Margin="10,661,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
 
 
     </Grid>

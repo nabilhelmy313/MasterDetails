@@ -1,0 +1,77 @@
+﻿@model CustomerService.ViewModel.CustServViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="m-0 p-0 row" id="mastercontent">
+    <!-- left side bar -->
+    <div class="col-sm-2 leftside">
+        <div class="cont">
+            <h6 class="pl-3 pt-1">LIST OF COUNTRY</h6>
+            <ul class="list-unstyled p-2" id="firstside">
+                @foreach (var item in Model.Country)
+                {
+                    <li class="p-2"><button value="@item.Id" id="@item.Id" data-topass="@item.Id" class="btn btn-block"><i class="far fa-flag m-1"></i> @item.Name</button></li>
+                }
+
+            </ul>
+        </div>
+    </div>
+    <!-- end left side bar -->
+    <!-- second sidebar -->
+
+    <div class="col-sm-2 middle p-2">
+        <div class="container-fluid">
+            <h6 class="pl-3 pt-1">LIST OF CITIES</h6>
+
+            <ul class="list-unstyled" id="secondnav">
+            </ul>
+        </div>
+    </div>
+    <!--end second sidebar -->
+    <!-- right side -->
+    <div class="col-sm-8 rightside p-2">
+        <div class="mt-2">
+            <div class="bg-white card-header mb-3">
+                <div class="container">
+                    <h6><i class="fas fa-globe m-1"></i> STATE INFORMATION</h6>
+                </div>
+            </div>
+            <div class="row container mb-3 ml-1">
+                <div class="col-sm-6">
+                    <p>
+                        <i class="fas fa-users m-1"></i>
+                        EMPLOYEES
+                    </p>
+                    <P class="pl-5" id="empnumber">@Model.Employees.Count()</P>
+                </div>
+
+                <div class="col-sm-6">
+                    <p>
+                        <i class="fas fa-store m-1"></i>
+                        BRUNCHES
+                    </p>
+                    <P class="pl-5" id="branchnumber">@Model.Branch.Count()</P>
+                </div>
+            </div>
+            <div class="mb-3">
+                @* Branch *@
+                <div id="accordion" class="branch">
+                    <div class="bg-white mb-4">
+
+                        <div class="bg-white mb-4">
+
+                        </div>
+
+                    </div>
+                </div>
+                @* End Branch *@
+
+            </div>
+        </div>
+    </div>
+    <!--end right side -->
+
+</div>
+
+@Html.Partial("_BindingPartialView")
