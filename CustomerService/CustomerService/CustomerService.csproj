@@ -133,13 +133,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011261426200_initial.cs" />
-    <Compile Include="Migrations\202011261426200_initial.designer.cs">
-      <DependentUpon>202011261426200_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202012120333115_FAQ-classes.cs" />
-    <Compile Include="Migrations\202012120333115_FAQ-classes.designer.cs">
-      <DependentUpon>202012120333115_FAQ-classes.cs</DependentUpon>
+    <Compile Include="Migrations\202012120843070_FAQclasses.cs" />
+    <Compile Include="Migrations\202012120843070_FAQclasses.designer.cs">
+      <DependentUpon>202012120843070_FAQclasses.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Answer.cs" />
@@ -225,11 +221,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202011261426200_initial.resx">
-      <DependentUpon>202011261426200_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202012120333115_FAQ-classes.resx">
-      <DependentUpon>202012120333115_FAQ-classes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012120843070_FAQclasses.resx">
+      <DependentUpon>202012120843070_FAQclasses.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

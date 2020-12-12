@@ -161,11 +161,9 @@ E:\work\MasterDetails\CustomerService\CustomerService\bin\System.Web.WebPages.Ra
 E:\work\MasterDetails\CustomerService\CustomerService\bin\Newtonsoft.Json.xml
 E:\work\MasterDetails\CustomerService\CustomerService\bin\Antlr3.Runtime.pdb
 E:\work\MasterDetails\CustomerService\CustomerService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.initial.resources
-E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.GenerateResource.cache
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.CoreCompileInputs.cache
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.CopyComplete
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.dll
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.pdb
-E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csprojAssemblyReference.cache
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.FAQclasses.resources
+E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.GenerateResource.cache
