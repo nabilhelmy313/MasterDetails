@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="custservModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EndTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Phone1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City_Id" Type="Int32" />
+    <NavigationProperty Name="City" Relationship="Self.FK_dbo_Branches_dbo_Cities_City_Id" FromRole="Branches" ToRole="Cities" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_dbo_Employees_dbo_Branches_Branch_Id" FromRole="Branches" ToRole="Employees" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Country_Id" Type="Int32" />
+    <NavigationProperty Name="Branches" Relationship="Self.FK_dbo_Branches_dbo_Cities_City_Id" FromRole="Cities" ToRole="Branches" />
+    <NavigationProperty Name="Country" Relationship="Self.FK_dbo_Cities_dbo_Countries_Country_Id" FromRole="Cities" ToRole="Countries" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK_dbo_Cities_dbo_Countries_Country_Id" FromRole="Countries" ToRole="Cities" />
+  </EntityType>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Employees" Relationship="Self.FK_dbo_Employees_dbo_Departments_Department_Id" FromRole="Departments" ToRole="Employees" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Branch_Id" Type="Int32" />
+    <Property Name="Department_Id" Type="Int32" />
+    <NavigationProperty Name="Branch" Relationship="Self.FK_dbo_Employees_dbo_Branches_Branch_Id" FromRole="Employees" ToRole="Branches" />
+    <NavigationProperty Name="Department" Relationship="Self.FK_dbo_Employees_dbo_Departments_Department_Id" FromRole="Employees" ToRole="Departments" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_dbo_Branches_dbo_Cities_City_Id">
+    <End Role="Cities" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Branches" Type="Self.Branch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cities">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Branches">
+        <PropertyRef Name="City_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Employees_dbo_Branches_Branch_Id">
+    <End Role="Branches" Type="Self.Branch" Multiplicity="0..1" />
+    <End Role="Employees" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branches">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="Branch_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Cities_dbo_Countries_Country_Id">
+    <End Role="Countries" Type="Self.Country" Multiplicity="0..1" />
+    <End Role="Cities" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cities">
+        <PropertyRef Name="Country_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Employees_dbo_Departments_Department_Id">
+    <End Role="Departments" Type="Self.Department" Multiplicity="0..1" />
+    <End Role="Employees" Type="Self.Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departments">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="Department_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="custservEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="Self.C__MigrationHistory" />
+    <EntitySet Name="Branches" EntityType="Self.Branch" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Departments" EntityType="Self.Department" />
+    <EntitySet Name="Employees" EntityType="Self.Employee" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK_dbo_Branches_dbo_Cities_City_Id" Association="Self.FK_dbo_Branches_dbo_Cities_City_Id">
+      <End Role="Cities" EntitySet="Cities" />
+      <End Role="Branches" EntitySet="Branches" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Employees_dbo_Branches_Branch_Id" Association="Self.FK_dbo_Employees_dbo_Branches_Branch_Id">
+      <End Role="Branches" EntitySet="Branches" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Cities_dbo_Countries_Country_Id" Association="Self.FK_dbo_Cities_dbo_Countries_Country_Id">
+      <End Role="Countries" EntitySet="Countries" />
+      <End Role="Cities" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Employees_dbo_Departments_Department_Id" Association="Self.FK_dbo_Employees_dbo_Departments_Department_Id">
+      <End Role="Departments" EntitySet="Departments" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <EntitySet Name="Answers" EntityType="custservModel.Answer" />
+    <EntitySet Name="Categories" EntityType="custservModel.Category" />
+    <EntitySet Name="Keywords" EntityType="custservModel.Keyword" />
+    <EntitySet Name="Questions" EntityType="custservModel.Question" />
+    <AssociationSet Name="FK_dbo_Answers_dbo_Questions_Question_Id" Association="custservModel.FK_dbo_Answers_dbo_Questions_Question_Id">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="Answer" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Keywords_dbo_Categories_Category_Id" Association="custservModel.FK_dbo_Keywords_dbo_Categories_Category_Id">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Keyword" EntitySet="Keywords" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Questions_dbo_Keywords_Keyword_Id" Association="custservModel.FK_dbo_Questions_dbo_Keywords_Keyword_Id">
+      <End Role="Keyword" EntitySet="Keywords" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Photo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsUpdated" Type="Boolean" Nullable="false" />
+    <Property Name="Question_Id" Type="Int32" />
+    <NavigationProperty Name="Question" Relationship="custservModel.FK_dbo_Answers_dbo_Questions_Question_Id" FromRole="Answer" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Keywords" Relationship="custservModel.FK_dbo_Keywords_dbo_Categories_Category_Id" FromRole="Category" ToRole="Keyword" />
+  </EntityType>
+  <EntityType Name="Keyword">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Word" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Counter" Type="Int32" Nullable="false" />
+    <Property Name="Category_Id" Type="Int32" />
+    <NavigationProperty Name="Category" Relationship="custservModel.FK_dbo_Keywords_dbo_Categories_Category_Id" FromRole="Keyword" ToRole="Category" />
+    <NavigationProperty Name="Questions" Relationship="custservModel.FK_dbo_Questions_dbo_Keywords_Keyword_Id" FromRole="Keyword" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsUpdated" Type="Boolean" Nullable="false" />
+    <Property Name="Keyword_Id" Type="Int32" />
+    <NavigationProperty Name="Answers" Relationship="custservModel.FK_dbo_Answers_dbo_Questions_Question_Id" FromRole="Question" ToRole="Answer" />
+    <NavigationProperty Name="Keyword" Relationship="custservModel.FK_dbo_Questions_dbo_Keywords_Keyword_Id" FromRole="Question" ToRole="Keyword" />
+  </EntityType>
+  <Association Name="FK_dbo_Answers_dbo_Questions_Question_Id">
+    <End Type="custservModel.Question" Role="Question" Multiplicity="0..1" />
+    <End Type="custservModel.Answer" Role="Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="Question_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Keywords_dbo_Categories_Category_Id">
+    <End Type="custservModel.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="custservModel.Keyword" Role="Keyword" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Keyword">
+        <PropertyRef Name="Category_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Questions_dbo_Keywords_Keyword_Id">
+    <End Type="custservModel.Keyword" Role="Keyword" Multiplicity="0..1" />
+    <End Type="custservModel.Question" Role="Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Keyword">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="Keyword_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

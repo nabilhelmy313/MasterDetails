@@ -17,6 +17,11 @@ namespace CustomerService.Models
         public DbSet<Branch> Branches { get; set; }
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Department> Departments { get; set; }
-        
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Keyword> Keywords { get; set; }
+        public DbSet<Question> Questions { get; set; }
+        public DbSet<Answer> Answers { get; set; }
+
+
     }
 }

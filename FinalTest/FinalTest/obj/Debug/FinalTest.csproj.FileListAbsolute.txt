@@ -1,0 +1,304 @@
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\FinalTest.exe.config
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\FinalTest.exe
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\FinalTest.pdb
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Data.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Utils.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraEditors.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraLayout.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\EntityFramework.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Data.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Utils.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraEditors.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraLayout.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\EntityFramework.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.CountryFrm.resources
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.Properties.Resources.resources
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.GenerateResource.cache
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.exe.licenses
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.CoreCompileInputs.cache
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.CopyComplete
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.exe
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.pdb
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraGrid.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraBars.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Office.v20.1.Core.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraGrid.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraBars.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\DevExpress.Office.v20.1.Core.xml
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\de\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.CityFrm.resources
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.BranchFrm.resources
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.EmployeeFrm.resources
+C:\Users\Nabil Helmy\source\repos\FinalTest\FinalTest\obj\Debug\FinalTest.csprojAssemblyReference.cache
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\FinalTest.exe.config
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\FinalTest.exe
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\FinalTest.pdb
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Data.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Utils.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraEditors.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraGrid.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraLayout.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\EntityFramework.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraBars.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Office.v20.1.Core.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Data.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Utils.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraEditors.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraGrid.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraLayout.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\EntityFramework.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraBars.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\DevExpress.Office.v20.1.Core.xml
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.Utils.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.Utils.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Utils.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Utils.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\de\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.csprojAssemblyReference.cache
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.BranchFrm.resources
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.CityFrm.resources
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.CountryFrm.resources
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.EmployeeFrm.resources
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.Properties.Resources.resources
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.GenerateResource.cache
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.exe.licenses
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.CoreCompileInputs.cache
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.CopyComplete
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.exe
+C:\Users\JC.TECH\Desktop\FinalTest\FinalTest\FinalTest\obj\Debug\FinalTest.pdb
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\FinalTest.exe.config
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\FinalTest.exe
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\FinalTest.pdb
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Data.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Utils.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraEditors.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraGrid.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraLayout.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\EntityFramework.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\EntityFramework.SqlServer.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraBars.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Office.v20.1.Core.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Data.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Utils.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraEditors.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraGrid.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraLayout.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\EntityFramework.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\EntityFramework.SqlServer.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraBars.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\DevExpress.Office.v20.1.Core.xml
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.Utils.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.Utils.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Utils.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Utils.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraEditors.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraEditors.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraEditors.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraEditors.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraGrid.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraGrid.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraGrid.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraGrid.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraLayout.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraLayout.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraLayout.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraLayout.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraPrinting.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraPrinting.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraPrinting.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraPrinting.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.Sparkline.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.Sparkline.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Sparkline.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Sparkline.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.RichEdit.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.RichEdit.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.RichEdit.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.RichEdit.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.XtraTreeList.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.XtraTreeList.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.XtraTreeList.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.XtraTreeList.v20.1.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\de\DevExpress.Office.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.csprojAssemblyReference.cache
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.BranchFrm.resources
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.CityFrm.resources
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.CountryFrm.resources
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.EmployeeFrm.resources
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.Properties.Resources.resources
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.GenerateResource.cache
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.exe.licenses
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.CoreCompileInputs.cache
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.csproj.CopyComplete
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.exe
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.pdb
+E:\work\MasterDetails\FinalTest\FinalTest\obj\Debug\FinalTest.CategoryFrm.resources
