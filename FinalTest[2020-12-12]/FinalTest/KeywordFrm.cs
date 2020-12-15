@@ -149,10 +149,13 @@ namespace FinalTest
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            KeywordFrm keywordFrm = new KeywordFrm();
-            keywordFrm.Show();
-            keywordFrm.FormClosed += KeywordFrm_FormClosed;
-            Hide();
+            //KeywordFrm keywordFrm = new KeywordFrm();
+            //keywordFrm.Show();
+            //keywordFrm.FormClosed += KeywordFrm_FormClosed;
+            //Hide();
+            keywordBindingSource.AddNew();
+            IdTextEdit.Text = WordTextEdit.Text = "";
+            Category_IdLookUpEdit.EditValue = "";
         }
 
         private void KeywordFrm_FormClosed(object sender, FormClosedEventArgs e)
@@ -169,10 +172,12 @@ namespace FinalTest
                 {
                     Keyword keyword = keywordBindingSource.Current as Keyword;
                     keyword.Word = WordTextEdit.Text;
-                    if (!string.IsNullOrEmpty(Category_IdLookUpEdit.Text))
+                    if (string.IsNullOrEmpty(Category_IdLookUpEdit.Text))
                     {
-                        keyword.Category_Id = int.Parse(Category_IdLookUpEdit.EditValue.ToString());
+                        XtraMessageBox.Show("PLEASE SELECT CATEGORY");
+                        return;
                     }
+                    keyword.Category_Id = int.Parse(Category_IdLookUpEdit.EditValue.ToString());
                     keyword.Counter = 0;
                     db.Keywords.AddOrUpdate(keyword);
                     db.SaveChanges();
@@ -191,6 +196,11 @@ namespace FinalTest
                 {
                     Keyword keyword = new Keyword();
                     keyword.Word = WordTextEdit.Text;
+                    if (string.IsNullOrEmpty(Category_IdLookUpEdit.Text))
+                    {
+                        MessageBox.Show("please select category");
+                        return;
+                    }
                     keyword.Category_Id = int.Parse(Category_IdLookUpEdit.EditValue.ToString());
                     keyword.Counter = 0;
                     db.Keywords.Add(keyword);

@@ -165,6 +165,11 @@ namespace FinalTest
                 {
                     Answer answer = answerBindingSource.Current as Answer;
                     answer.Text = TextTextEdit.Text;
+                    if (string.IsNullOrEmpty(Question_IdLookUpEdit.Text))
+                    {
+                        XtraMessageBox.Show("PLEASE ENTER THE QUESTION");
+                        return;
+                    }
                     answer.Question_Id = int.Parse(Question_IdLookUpEdit.EditValue.ToString());
                     answer.DateTime = DateTime.Now;
                     answer.IsUpdated = true;

@@ -1,0 +1,100 @@
+﻿@model CustomerService.ViewModel.FAQViewModel
+
+<div class="">
+    <!-- CATEGORIES -->
+    <div class="row m-0 bg-dark p-2">
+        <div class="col-sm-2 mt-3">
+            <h6 style="font-weight: bold;color: white;">SHORT CUTS WORDS</h6>
+        </div>
+        @foreach (var item in Model.Categories)
+        {
+            <div class="col-sm-3">
+                <button id="@item.Id" value="@item.Id" data-topass="@item.Id" class="btn btn-outline-light btn-block p-2 cat" >
+                   <h6><i class="fas fa-users mr-2"></i>@item.Name</h6>
+                </button>
+            </div>
+        }
+
+        <div class="col-sm-4 ">
+            <div class="row mt-1 form-inline">
+                <form method="get" action="@Url.Action("index", "faq")">
+                    <label for="search">Search</label>
+                    <input type="text" placeholder="SEARCH FOR QUESTION ? ..." class="form-control p-2 mr-2" name="search" id="search" />
+                    <button type="submit" class="btn btn-warning p-2"><i class="fa fa-search"></i> SEARCH</button>
+                </form>
+            </div>
+                
+        </div>
+    </div>
+    <!-- END CATEGORIES -->
+    <div class="row m-0 p-0">
+
+        <div class="col-sm-2 shortcut pt-2">
+            <ul class="list-unstyled" id="key">
+                @foreach (var item in Model.Keywords)
+                {
+                    <li class="p-2"><button id="@item.Id" value="@item.Id" data-topass="@item.Id" class="btn btn-dark btn-block cut"><i class="fab fa-slack-hash mr-2"></i>@item.Word</button> </li>
+                }
+            </ul>
+        </div>
+        <div class="col-sm-10 quest">
+            <!-- FAQ HEADER -->
+            <div class="bg-white card-header my-3 ">
+                <div class="container">
+                    <h6 style="font-weight: bold;"><i class="fas fa-question-circle fa-lg mr-2"></i>FREQUENTLY ASKED QUESTIONS</h6>
+                </div>
+            </div>
+            <!--END FAQ HEADER -->
+            <!-- FAQ ACCORDION -->
+            <div id="accordion">
+                <!-- QUESTION CARD-->
+                <div class="bg-white mb-4" id="quest">
+                    @foreach (var item in Model.Questions)
+                    {
+                        <!-- QUESTION -->
+                        <div>
+
+                            <div class="card-header bg-white" id="@item.Id">
+                                <div>
+                                    <h5 class="mb-0">
+                                        <button id="@item.Id" value="@item.Id" data-topass="@item.Id" class="btn btn-xl btn-block question" style="background-color: white;text-align: left;color: #989FA5;"
+                                           data-toggle="colapse" data-target="#@item.Text"role="button" aria-controls="@item.Text" aria-expanded="true" >
+                                            <div class="d-flex">
+                                                <h6 class="mr-auto"><i class="far fa-question-circle mr-2 fa-lg"></i>@item.Text</h6>
+                                                <h6 class=""><i class="fas fa-chevron-circle-down fa-lg"></i></h6>
+                                            </div>
+                                        </button>
+                                    </h5>
+
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        <!--END QUESTION -->
+                        <!-- ANSWER -->
+                        <div id="answer">
+                            @*<div id="@("q"+item.Id)" class="collapse ans" aria-labelledby="@("h"+item.Id)" data-parent="#accordion">
+
+                            </div>*@
+                            <div id="@item.Text" class="collapse show ans" aria-labelledby="@item.Id" data-parent="#accordion">
+
+                            </div>
+                        </div>
+                        <!--END ANSWER -->
+                    }
+                 </div>
+                <!--END QUESTION CARD -->
+                <!-- end one branch -->
+
+
+            </div>
+            <!--END FAQ ACCORDION -->
+
+        </div>
+    </div>
+</div>
+<script>
+    
+</script>
+@Html.Partial("_AJAXPartialView")

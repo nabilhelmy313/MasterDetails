@@ -408,3 +408,8 @@ E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.Questi
 E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.CategoryFrm.resources
 E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.AnswerFrm.resources
 E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.DepartmentFrm.resources
+E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.XtraForm1.resources
+E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\bin\Debug\FinalTest.exe.manifest
+E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\bin\Debug\FinalTest.application
+E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.exe.manifest
+E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.application
