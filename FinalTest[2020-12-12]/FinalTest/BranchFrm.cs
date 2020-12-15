@@ -72,9 +72,22 @@ namespace FinalTest
                 branch.Address = AddressTextEdit.Text;
                 branch.Phone1 = Phone1TextEdit.Text;
                 branch.Phone2 = Phone2TextEdit.Text;
-                branch.StartTime =DateTime.Parse(StartTimeDateEdit.EditValue.ToString());
+                if (string.IsNullOrEmpty( StartTimeDateEdit.Text))
+                {
+                    XtraMessageBox.Show("START DATE MUST ENTER");
+                    return;
+                }
+                branch.StartTime = DateTime.Parse(StartTimeDateEdit.EditValue.ToString());
+                if (string.IsNullOrEmpty(EndTimeDateEdit.Text))
+                {
+                    XtraMessageBox.Show("CLOSED DATE MUST ENTER");
+                    return;
+                }
                 branch.EndTime = DateTime.Parse(EndTimeDateEdit.EditValue.ToString());
-                branch.City_Id = int.Parse(CityLookUpEdit.EditValue.ToString()) ;
+                if (!string.IsNullOrEmpty(CityLookUpEdit.Text))
+                {
+                    branch.City_Id = int.Parse(CityLookUpEdit.EditValue.ToString());
+                }
                 db.Branches.Add(branch);
                 db.SaveChanges();
                 RefreshGrid();
@@ -83,15 +96,116 @@ namespace FinalTest
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            Branch branch =gridView1.GetFocusedRow() as Branch;
-            if (branch!=null)
+          
+            Branch branch = branchBindingSource.Current as Branch;
+            var x = MessageBox.Show("ARE YOU SURE TO DELETE", "DELETE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (x == DialogResult.Yes)
             {
-                db.Branches.Remove(branch);
-                db.SaveChanges();
+                try
+                {
+                    db.Branches.Remove(branch);
+                    db.SaveChanges();
+                    RefreshGrid();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
             }
         }
+        private void simpleButton8_Click(object sender, EventArgs e)
+        {
+            BranchFrm branchFrm = new BranchFrm();
+            branchFrm.Show();
+            branchFrm.FormClosed += BranchFrm_FormClosed;
+            Hide();
+        }
 
-        private void simpleButton7_Click(object sender, EventArgs e)
+        private void BranchFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CategoryFrm categoryFrm = new CategoryFrm();
+            categoryFrm.Show();
+            categoryFrm.FormClosed += CategoryFrm_FormClosed;
+            Hide();
+        }
+
+        private void CategoryFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            KeywordFrm keywordFrm = new KeywordFrm();
+            keywordFrm.Show();
+            keywordFrm.FormClosed += KeywordFrm_FormClosed;
+            Hide();
+        }
+
+        private void KeywordFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            QuestionFrm questionFrm = new QuestionFrm();
+            questionFrm.Show();
+            questionFrm.FormClosed += QuestionFrm_FormClosed;
+            Hide();
+        }
+
+        private void QuestionFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AnswerFrm answerFrm = new AnswerFrm();
+            answerFrm.Show();
+            answerFrm.FormClosed += AnswerFrm_FormClosed;
+            Hide();
+        }
+
+        private void AnswerFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            EmployeeFrm employee = new EmployeeFrm();
+            employee.Show();
+            employee.FormClosed += Employee_FormClosed;
+            Hide();
+        }
+
+        private void Employee_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DepartmentFrm department = new DepartmentFrm();
+            department.Show();
+            department.FormClosed += Department_FormClosed;
+            Hide();
+        }
+
+        private void Department_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CountryFrm country = new CountryFrm();
             country.Show();
@@ -101,10 +215,10 @@ namespace FinalTest
 
         private void Country_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
-        private void simpleButton6_Click(object sender, EventArgs e)
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CityFrm city = new CityFrm();
             city.Show();
@@ -114,10 +228,10 @@ namespace FinalTest
 
         private void City_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
+            Close();
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             BranchFrm branch = new BranchFrm();
             branch.Show();
@@ -127,32 +241,7 @@ namespace FinalTest
 
         private void Branch_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
-        }
-
-        private void simpleButton8_Click(object sender, EventArgs e)
-        {
-            IdTextEdit.Text ="0";
-            NameTextEdit.Text = "";
-            Phone1TextEdit.Text = "";
-            Phone2TextEdit.Text="";
-            AddressTextEdit.Text = "";
-            CityLookUpEdit.EditValue = "";
-        }
-
-        private void gridView1_LostFocus(object sender, EventArgs e)
-        {
-            IdTextEdit.Text = "0";
-            NameTextEdit.Text = "";
-            Phone1TextEdit.Text = "";
-            Phone2TextEdit.Text = "";
-            AddressTextEdit.Text = "";
-            CityLookUpEdit.EditValue = ""; IdTextEdit.Text = "0";
-            NameTextEdit.Text = "";
-            Phone1TextEdit.Text = "";
-            Phone2TextEdit.Text = "";
-            AddressTextEdit.Text = "";
-            CityLookUpEdit.EditValue = "";
+            Close();
         }
     }
 }

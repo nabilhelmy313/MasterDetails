@@ -37,18 +37,7 @@ namespace FinalTest
 
         }
 
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-            CityFrm city = new CityFrm();
-            city.Show();
-            city.FormClosed += City_FormClosed;
-            Hide();
-        }
-
-        private void City_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Close();
-        }
+       
 
         private void simpleButton6_Click(object sender, EventArgs e)
 
@@ -60,6 +49,7 @@ namespace FinalTest
                     Country country = countryBindingSource.Current as Country;
                     db.Countries.AddOrUpdate(country);
                     db.SaveChanges();
+                    XtraMessageBox.Show("COUNTRY UPDATED SUCCUESSFULLY", "SUCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RefershGrid();
                 }
                 else if (db.Countries.Where(i => i.Id != id).Any())
@@ -68,8 +58,9 @@ namespace FinalTest
                     country.Name = NameTextEdit.Text;
                     db.Countries.Add(country);
                     db.SaveChanges();
+                    XtraMessageBox.Show("COUNTRY ADDED SUCCUESSFULLY","SUCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
                     RefershGrid();
-                }
+            }
 
             
         }
@@ -85,32 +76,9 @@ namespace FinalTest
             countryBindingSource.DataSource = new Country();
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
-        {
-            BranchFrm frm = new BranchFrm();
-            frm.Show();
-            frm.FormClosed += Frm_FormClosed;
-            Hide();
-        }
 
-        private void Frm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Close();
-        }
 
-        private void simpleButton4_Click(object sender, EventArgs e)
-        {
-            EmployeeFrm employee = new EmployeeFrm();
-            employee.Show();
-            employee.FormClosed += Employee_FormClosed;
-            Hide();
-        }
-
-        private void Employee_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Close();
-        }
-
+      
         private void gridControl1_MouseClick(object sender, MouseEventArgs e)
         {
             
@@ -134,20 +102,35 @@ namespace FinalTest
             }
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+
+
+        private void simpleButton7_Click_1(object sender, EventArgs e)
         {
-            CountryFrm country = new CountryFrm();
-            country.Show();
-            country.FormClosed += Country_FormClosed;
+            CountryFrm countryFrm = new CountryFrm();
+            countryFrm.Show();
+            countryFrm.FormClosed += CountryFrm_FormClosed;
             Hide();
         }
 
-        private void Country_FormClosed(object sender, FormClosedEventArgs e)
+        private void CountryFrm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Close();
         }
 
-        private void simpleButton5_Click(object sender, EventArgs e)
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            EmployeeFrm employee = new EmployeeFrm();
+            employee.Show();
+            employee.FormClosed += Employee_FormClosed;
+            Hide();
+        }
+
+        private void Employee_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             DepartmentFrm department = new DepartmentFrm();
             department.Show();
@@ -160,9 +143,96 @@ namespace FinalTest
             Close();
         }
 
-        private void simpleButton7_Click_1(object sender, EventArgs e)
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            db.SaveChanges();
+            CountryFrm country = new CountryFrm();
+            country.Show();
+            country.FormClosed += Country_FormClosed;
+            Hide();
         }
+
+        private void Country_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CityFrm city = new CityFrm();
+            city.Show();
+            city.FormClosed += City_FormClosed;
+            Hide();
+        }
+
+        private void City_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            BranchFrm branch = new BranchFrm();
+            branch.Show();
+            branch.FormClosed += Branch_FormClosed;
+            Hide();
+        }
+
+        private void Branch_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CategoryFrm category = new CategoryFrm();
+            category.Show();
+            category.FormClosed += Category_FormClosed;
+            Hide();
+        }
+
+        private void Category_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            KeywordFrm keyword = new KeywordFrm();
+            keyword.Show();
+            keyword.FormClosed += Keyword_FormClosed;
+            Hide();
+        }
+
+        private void Keyword_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            QuestionFrm question = new QuestionFrm();
+            question.Show();
+            question.FormClosed += Question_FormClosed;
+            Hide();
+        }
+
+        private void Question_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AnswerFrm answer = new AnswerFrm();
+            answer.Show();
+            answer.FormClosed += Answer_FormClosed;
+            Hide();
+        }
+
+        private void Answer_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
     }
 }

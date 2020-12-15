@@ -169,7 +169,10 @@ namespace FinalTest
                 {
                     Keyword keyword = keywordBindingSource.Current as Keyword;
                     keyword.Word = WordTextEdit.Text;
-                    keyword.Category_Id = int.Parse(Category_IdLookUpEdit.EditValue.ToString());
+                    if (!string.IsNullOrEmpty(Category_IdLookUpEdit.Text))
+                    {
+                        keyword.Category_Id = int.Parse(Category_IdLookUpEdit.EditValue.ToString());
+                    }
                     keyword.Counter = 0;
                     db.Keywords.AddOrUpdate(keyword);
                     db.SaveChanges();

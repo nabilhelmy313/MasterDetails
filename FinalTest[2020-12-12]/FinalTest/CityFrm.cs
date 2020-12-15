@@ -40,27 +40,33 @@ namespace FinalTest
         }
         private void simpleButton6_Click(object sender, EventArgs e)
         {
-            using (db)
-            {
-                string name=NameTextEdit.Text;
-                if (db.Cities.Where(i=>i.Name==name).Any())
+
+            
+                int id=int.Parse(IdTextEdit.Text);
+                if (db.Cities.Where(i=>i.Id==id).Any())
                 {
                     City city = cityBindingSource.Current as City;
                     db.Cities.AddOrUpdate(city);
                     db.SaveChanges();
-                    RefershGrid();
+                XtraMessageBox.Show("PLEASE SELECT COUNTRY", "ERROR,", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                RefershGrid();
                 }
-                else if (db.Cities.Where(i => i.Name != name).Any())
+                else                 
                 {
                     City city = new City();
                     city.Name = NameTextEdit.Text;
+                    if (string.IsNullOrEmpty(CountryLookUpEdit.Text.ToString()))
+                    {
+                        return;
+                    }
                     city.Country_Id = int.Parse(CountryLookUpEdit.EditValue.ToString());
                     db.Cities.Add(city);
                     db.SaveChanges();
+                        XtraMessageBox.Show("CITY ADDED SUCCESSULLY","SUCCESS," ,MessageBoxButtons.OK,MessageBoxIcon.Information);
                     RefershGrid();
                 }
               
-            }
+            
         }
 
         private void CityFrm_Load(object sender, EventArgs e)
@@ -71,7 +77,7 @@ namespace FinalTest
         private void simpleButton7_Click(object sender, EventArgs e)
         {
             City city = cityBindingSource.Current as City;
-            var x= MessageBox.Show("ARE YOU SURE TO DELETE","DELETE",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            var x= XtraMessageBox.Show("ARE YOU SURE TO DELETE","DELETE",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
             if (x==DialogResult.Yes)
             {
                 db.Cities.Remove(city);
@@ -81,7 +87,82 @@ namespace FinalTest
 
         }
 
-        private void simpleButton4_Click(object sender, EventArgs e)
+       
+
+        
+
+        
+
+        
+
+       
+
+        private void simpleButton1_Click_1(object sender, EventArgs e)
+        {
+            CityFrm cityFrm = new CityFrm();
+            cityFrm.Show();
+            cityFrm.FormClosed += CityFrm_FormClosed;
+            Hide();
+        }
+
+        private void CityFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            CategoryFrm categoryFrm = new CategoryFrm();
+            categoryFrm.Show();
+            categoryFrm.FormClosed += CategoryFrm_FormClosed;
+            Hide();
+        }
+
+        private void CategoryFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            KeywordFrm keywordFrm = new KeywordFrm();
+            keywordFrm.Show();
+            keywordFrm.FormClosed += KeywordFrm_FormClosed;
+            Hide();
+        }
+
+        private void KeywordFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            QuestionFrm questionFrm = new QuestionFrm();
+            questionFrm.Show();
+            questionFrm.FormClosed += QuestionFrm_FormClosed;
+            Hide();
+        }
+
+        private void QuestionFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            AnswerFrm answerFrm = new AnswerFrm();
+            answerFrm.Show();
+            answerFrm.FormClosed += AnswerFrm_FormClosed;
+            Hide();
+        }
+
+        private void AnswerFrm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close();
+        }
+
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             EmployeeFrm employee = new EmployeeFrm();
             employee.Show();
@@ -94,7 +175,7 @@ namespace FinalTest
             Close();
         }
 
-        private void simpleButton5_Click(object sender, EventArgs e)
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             DepartmentFrm department = new DepartmentFrm();
             department.Show();
@@ -107,7 +188,7 @@ namespace FinalTest
             Close();
         }
 
-        private void simpleButton1_Click(object sender, EventArgs e)
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CountryFrm country = new CountryFrm();
             country.Show();
@@ -120,7 +201,7 @@ namespace FinalTest
             Close();
         }
 
-        private void simpleButton2_Click(object sender, EventArgs e)
+        private void barButtonItem12_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             CityFrm city = new CityFrm();
             city.Show();
@@ -133,7 +214,7 @@ namespace FinalTest
             Close();
         }
 
-        private void simpleButton3_Click(object sender, EventArgs e)
+        private void barButtonItem13_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             BranchFrm branch = new BranchFrm();
             branch.Show();

@@ -186,6 +186,9 @@
     <EmbeddedResource Include="CountryFrm.resx">
       <DependentUpon>CountryFrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DepartmentFrm.resx">
+      <DependentUpon>DepartmentFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EmployeeFrm.resx">
       <DependentUpon>EmployeeFrm.cs</DependentUpon>
     </EmbeddedResource>

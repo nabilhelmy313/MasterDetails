@@ -7,6 +7,7 @@ using System.Data.Entity.Migrations;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,6 +26,7 @@ namespace FinalTest
         {
             gridControl1.DataSource = db.Questions.ToList();
             keywordBindingSource.DataSource = db.Keywords.ToList();
+            categoryBindingSource.DataSource = db.Categories.ToList();
         }
         private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -175,13 +177,33 @@ namespace FinalTest
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             int x = int.Parse(IdTextEdit.Text);
+           if (string.IsNullOrEmpty(catlookup.Text))
+                    {
+                        XtraMessageBox.Show("PLEASE SELECT CATEGORY","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        return;
+                    }
             if (db.Questions.Where(id=>id.Id==x).Any())
             {
                 try
                 {
                     Question question = questionBindingSource.Current as Question;
                     question.Text = TextTextEdit.Text;
-                    question.Keyword_Id = int.Parse(Keyword_IdTextEdit.EditValue.ToString());
+                    
+                    if (string.IsNullOrEmpty(Keyword_IdTextEdit.Text))
+                    {
+                        Keyword keyword = new Keyword()
+                        {
+                            Counter = 0,
+                            Word = TextTextEdit.Text.Substring(0, TextTextEdit.Text.IndexOf(" ")),
+                            Category_Id = int.Parse(catlookup.EditValue.ToString())
+                        };
+                        question.Keyword = keyword;
+                        db.Keywords.Add(keyword);
+                    }
+                    else
+                    {
+                        question.Keyword_Id = int.Parse(Keyword_IdTextEdit.EditValue.ToString());
+                    }
                     question.DateTime = DateTime.Now;
                     question.IsUpdated = true;
                     db.Questions.AddOrUpdate(question);
@@ -200,7 +222,21 @@ namespace FinalTest
                 {
                     Question question = new Question();
                     question.Text = TextTextEdit.Text;
-                    question.Keyword_Id = int.Parse(Keyword_IdTextEdit.EditValue.ToString());
+                    if (string.IsNullOrEmpty(Keyword_IdTextEdit.Text))
+                    {
+                        Keyword keyword = new Keyword()
+                        {
+                            Counter = 0,
+                            Word = TextTextEdit.Text.Substring(0, TextTextEdit.Text.IndexOf(" ")),
+                            Category_Id = int.Parse(catlookup.EditValue.ToString())
+                        };
+                        question.Keyword = keyword;
+                        db.Keywords.Add(keyword);
+                    }
+                    else
+                    {
+                        question.Keyword_Id = int.Parse(Keyword_IdTextEdit.EditValue.ToString());
+                    }
                     question.DateTime = DateTime.Now;
                     question.IsUpdated = false;
                     db.Questions.Add(question);
@@ -234,6 +270,19 @@ namespace FinalTest
                 }
 
             }
+        }
+
+        private void QuestionFrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textEdit1_EditValueChanged(object sender, EventArgs e)
+        {
+            var look = sender as LookUpEdit;
+            var row = look.GetSelectedDataRow() as Category;
+            var id = row.Id;
+            keywordBindingSource.DataSource = db.Keywords.Where(i => i.Category_Id == id).ToList();
         }
     }
 }

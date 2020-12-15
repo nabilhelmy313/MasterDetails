@@ -407,3 +407,4 @@ E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.Keywor
 E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.QuestionFrm.resources
 E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.CategoryFrm.resources
 E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.AnswerFrm.resources
+E:\work\MasterDetails\FinalTest[2020-12-12]\FinalTest\obj\Debug\FinalTest.DepartmentFrm.resources

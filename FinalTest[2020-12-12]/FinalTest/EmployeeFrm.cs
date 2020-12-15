@@ -63,6 +63,7 @@ namespace FinalTest
                 Employee employee = employeeBindingSource.Current as Employee;
                 db.Employees.AddOrUpdate(employee);
                 db.SaveChanges();
+                XtraMessageBox.Show("EMPLOYEE UPDATED SUCCUESSFULLY","SUCCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 RefreshGrid();
             }
             else 
@@ -72,10 +73,17 @@ namespace FinalTest
                 employee.Phone1 = Phone1TextEdit.Text;
                 employee.Phone2 = Phone2TextEdit.Text;
                 employee.Role = RoleTextEdit.Text;
-                employee.Branch_Id = int.Parse(Branch_IdLookUpEdit.EditValue.ToString());
-                employee.Department_Id = int.Parse(Department_IdLookUpEdit.EditValue.ToString());
+                if (!string.IsNullOrEmpty(Branch_IdLookUpEdit.Text.ToString()))
+                {
+                    employee.Branch_Id = int.Parse(Branch_IdLookUpEdit.EditValue.ToString());
+                }
+                if (!string.IsNullOrEmpty(Department_IdLookUpEdit.Text.ToString()))
+                {
+                    employee.Department_Id = int.Parse(Department_IdLookUpEdit.EditValue.ToString());
+                }
                 db.Employees.Add(employee);
                 db.SaveChanges();
+                XtraMessageBox.Show("EMPLOYEE ADDED SUCCUESSFULLY","SUCCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 RefreshGrid();
             }
         }
