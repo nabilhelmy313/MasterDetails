@@ -37,7 +37,6 @@ namespace FinalTest
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.cityBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCountry_Id = new DevExpress.XtraGrid.Columns.GridColumn();
             this.repositoryItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
@@ -111,20 +110,21 @@ namespace FinalTest
             this.dataLayoutControl1.Controls.Add(this.CountryLookUpEdit);
             this.dataLayoutControl1.Controls.Add(this.IdTextEdit);
             this.dataLayoutControl1.DataSource = this.cityBindingSource;
-            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 36);
+            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 29);
             this.dataLayoutControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.Root;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(1126, 530);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(965, 431);
             this.dataLayoutControl1.TabIndex = 0;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(12, 96);
+            this.simpleButton1.Location = new System.Drawing.Point(11, 86);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(363, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(310, 36);
             this.simpleButton1.StyleController = this.dataLayoutControl1;
             this.simpleButton1.TabIndex = 10;
             this.simpleButton1.Text = "NEW";
@@ -133,10 +133,9 @@ namespace FinalTest
             // simpleButton7
             // 
             this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
-            this.simpleButton7.Location = new System.Drawing.Point(760, 96);
-            this.simpleButton7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.simpleButton7.Location = new System.Drawing.Point(651, 86);
             this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(354, 36);
+            this.simpleButton7.Size = new System.Drawing.Size(303, 36);
             this.simpleButton7.StyleController = this.dataLayoutControl1;
             this.simpleButton7.TabIndex = 9;
             this.simpleButton7.Text = "DELETE";
@@ -145,14 +144,13 @@ namespace FinalTest
             // gridControl1
             // 
             this.gridControl1.DataSource = this.cityBindingSource;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.gridControl1.Location = new System.Drawing.Point(12, 136);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl1.Location = new System.Drawing.Point(11, 126);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemLookUpEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(1102, 382);
+            this.gridControl1.Size = new System.Drawing.Size(943, 295);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -166,42 +164,27 @@ namespace FinalTest
             this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridView1.Appearance.Row.Options.UseFont = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colId,
             this.colName,
             this.colCountry_Id});
-            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
-            // colId
-            // 
-            this.colId.FieldName = "Id";
-            this.colId.MinWidth = 23;
-            this.colId.Name = "colId";
-            this.colId.Visible = true;
-            this.colId.VisibleIndex = 0;
-            this.colId.Width = 87;
-            // 
             // colName
             // 
             this.colName.FieldName = "Name";
-            this.colName.MinWidth = 23;
             this.colName.Name = "colName";
             this.colName.Visible = true;
-            this.colName.VisibleIndex = 1;
-            this.colName.Width = 87;
+            this.colName.VisibleIndex = 0;
             // 
             // colCountry_Id
             // 
             this.colCountry_Id.Caption = "COUNTRY";
             this.colCountry_Id.ColumnEdit = this.repositoryItemLookUpEdit1;
             this.colCountry_Id.FieldName = "Country_Id";
-            this.colCountry_Id.MinWidth = 23;
             this.colCountry_Id.Name = "colCountry_Id";
             this.colCountry_Id.Visible = true;
-            this.colCountry_Id.VisibleIndex = 2;
-            this.colCountry_Id.Width = 87;
+            this.colCountry_Id.VisibleIndex = 1;
             // 
             // repositoryItemLookUpEdit1
             // 
@@ -209,7 +192,7 @@ namespace FinalTest
             this.repositoryItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.repositoryItemLookUpEdit1.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 42, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 36, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.repositoryItemLookUpEdit1.DataSource = this.countryBindingSource;
             this.repositoryItemLookUpEdit1.DisplayMember = "Name";
             this.repositoryItemLookUpEdit1.Name = "repositoryItemLookUpEdit1";
@@ -222,10 +205,10 @@ namespace FinalTest
             // simpleButton6
             // 
             this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.Location = new System.Drawing.Point(379, 96);
+            this.simpleButton6.Location = new System.Drawing.Point(325, 86);
             this.simpleButton6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(377, 36);
+            this.simpleButton6.Size = new System.Drawing.Size(322, 36);
             this.simpleButton6.StyleController = this.dataLayoutControl1;
             this.simpleButton6.TabIndex = 6;
             this.simpleButton6.Text = "SAVE";
@@ -234,31 +217,31 @@ namespace FinalTest
             // NameTextEdit
             // 
             this.NameTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cityBindingSource, "Name", true));
-            this.NameTextEdit.Location = new System.Drawing.Point(59, 38);
+            this.NameTextEdit.Location = new System.Drawing.Point(53, 34);
             this.NameTextEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NameTextEdit.Name = "NameTextEdit";
             this.NameTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.NameTextEdit.Size = new System.Drawing.Size(1055, 28);
+            this.NameTextEdit.Size = new System.Drawing.Size(901, 24);
             this.NameTextEdit.StyleController = this.dataLayoutControl1;
             this.NameTextEdit.TabIndex = 4;
             // 
             // CountryLookUpEdit
             // 
             this.CountryLookUpEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cityBindingSource, "Country_Id", true));
-            this.CountryLookUpEdit.Location = new System.Drawing.Point(59, 70);
+            this.CountryLookUpEdit.Location = new System.Drawing.Point(53, 62);
             this.CountryLookUpEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CountryLookUpEdit.Name = "CountryLookUpEdit";
             this.CountryLookUpEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
             this.CountryLookUpEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.CountryLookUpEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 44, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 38, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.CountryLookUpEdit.Properties.DataSource = this.countryBindingSource;
             this.CountryLookUpEdit.Properties.DisplayMember = "Name";
             this.CountryLookUpEdit.Properties.NullText = "";
             this.CountryLookUpEdit.Properties.ValueMember = "Id";
-            this.CountryLookUpEdit.Size = new System.Drawing.Size(1055, 22);
+            this.CountryLookUpEdit.Size = new System.Drawing.Size(901, 20);
             this.CountryLookUpEdit.StyleController = this.dataLayoutControl1;
             this.CountryLookUpEdit.TabIndex = 5;
             // 
@@ -267,14 +250,13 @@ namespace FinalTest
             this.IdTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.cityBindingSource, "Id", true));
             this.IdTextEdit.EditValue = "0";
             this.IdTextEdit.Enabled = false;
-            this.IdTextEdit.Location = new System.Drawing.Point(59, 12);
-            this.IdTextEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.IdTextEdit.Location = new System.Drawing.Point(53, 10);
             this.IdTextEdit.Name = "IdTextEdit";
             this.IdTextEdit.Properties.Appearance.Options.UseTextOptions = true;
             this.IdTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.IdTextEdit.Properties.Mask.EditMask = "N0";
             this.IdTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.IdTextEdit.Size = new System.Drawing.Size(1055, 22);
+            this.IdTextEdit.Size = new System.Drawing.Size(901, 20);
             this.IdTextEdit.StyleController = this.dataLayoutControl1;
             this.IdTextEdit.TabIndex = 8;
             // 
@@ -285,7 +267,7 @@ namespace FinalTest
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1126, 530);
+            this.Root.Size = new System.Drawing.Size(965, 431);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -302,50 +284,50 @@ namespace FinalTest
             this.layoutControlItem4});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(1106, 510);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(947, 415);
             // 
             // ItemForName
             // 
             this.ItemForName.Control = this.NameTextEdit;
-            this.ItemForName.Location = new System.Drawing.Point(0, 26);
+            this.ItemForName.Location = new System.Drawing.Point(0, 24);
             this.ItemForName.Name = "ItemForName";
-            this.ItemForName.Size = new System.Drawing.Size(1106, 32);
+            this.ItemForName.Size = new System.Drawing.Size(947, 28);
             this.ItemForName.Text = "Name";
-            this.ItemForName.TextSize = new System.Drawing.Size(44, 16);
+            this.ItemForName.TextSize = new System.Drawing.Size(39, 13);
             // 
             // ItemForCountry
             // 
             this.ItemForCountry.Control = this.CountryLookUpEdit;
-            this.ItemForCountry.Location = new System.Drawing.Point(0, 58);
+            this.ItemForCountry.Location = new System.Drawing.Point(0, 52);
             this.ItemForCountry.Name = "ItemForCountry";
-            this.ItemForCountry.Size = new System.Drawing.Size(1106, 26);
+            this.ItemForCountry.Size = new System.Drawing.Size(947, 24);
             this.ItemForCountry.Text = "Country";
-            this.ItemForCountry.TextSize = new System.Drawing.Size(44, 16);
+            this.ItemForCountry.TextSize = new System.Drawing.Size(39, 13);
             // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.simpleButton6;
-            this.layoutControlItem1.Location = new System.Drawing.Point(367, 84);
+            this.layoutControlItem1.Location = new System.Drawing.Point(314, 76);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(381, 40);
+            this.layoutControlItem1.Size = new System.Drawing.Size(326, 40);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.gridControl1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 124);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 116);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1106, 386);
+            this.layoutControlItem2.Size = new System.Drawing.Size(947, 299);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.simpleButton7;
-            this.layoutControlItem3.Location = new System.Drawing.Point(748, 84);
+            this.layoutControlItem3.Location = new System.Drawing.Point(640, 76);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(358, 40);
+            this.layoutControlItem3.Size = new System.Drawing.Size(307, 40);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
@@ -355,16 +337,16 @@ namespace FinalTest
             this.ItemForId.Enabled = false;
             this.ItemForId.Location = new System.Drawing.Point(0, 0);
             this.ItemForId.Name = "ItemForId";
-            this.ItemForId.Size = new System.Drawing.Size(1106, 26);
+            this.ItemForId.Size = new System.Drawing.Size(947, 24);
             this.ItemForId.Text = "Id";
-            this.ItemForId.TextSize = new System.Drawing.Size(44, 16);
+            this.ItemForId.TextSize = new System.Drawing.Size(39, 13);
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.simpleButton1;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 84);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 76);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(367, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(314, 40);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -527,35 +509,31 @@ namespace FinalTest
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.barDockControlTop.Size = new System.Drawing.Size(1120, 30);
+            this.barDockControlTop.Size = new System.Drawing.Size(960, 24);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 558);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 453);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(1120, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(960, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 528);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 429);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1120, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(960, 24);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 528);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 429);
             // 
             // barButtonItem1
             // 
@@ -601,9 +579,9 @@ namespace FinalTest
             // 
             // CityFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1120, 558);
+            this.ClientSize = new System.Drawing.Size(960, 453);
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
@@ -612,6 +590,7 @@ namespace FinalTest
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "CityFrm";
             this.Text = "CityFrm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.CityFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
@@ -654,7 +633,6 @@ namespace FinalTest
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
-        private DevExpress.XtraGrid.Columns.GridColumn colId;
         private DevExpress.XtraGrid.Columns.GridColumn colName;
         private DevExpress.XtraGrid.Columns.GridColumn colCountry_Id;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit repositoryItemLookUpEdit1;

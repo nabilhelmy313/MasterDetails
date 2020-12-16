@@ -176,7 +176,7 @@ namespace FinalTest
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-            int x = int.Parse(IdTextEdit.Text);
+           int x = int.Parse(IdTextEdit.Text);
            if (string.IsNullOrEmpty(catlookup.Text))
                     {
                         XtraMessageBox.Show("PLEASE SELECT CATEGORY","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -188,7 +188,6 @@ namespace FinalTest
                 {
                     Question question = questionBindingSource.Current as Question;
                     question.Text = TextTextEdit.Text;
-                    
                     if (string.IsNullOrEmpty(Keyword_IdTextEdit.Text))
                     {
                         Keyword keyword = new Keyword()

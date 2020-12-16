@@ -48,6 +48,9 @@ namespace FinalTest
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.XtraForm1layoutControl1ConvertedLayout = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.dataLayoutControl1item = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -63,6 +66,10 @@ namespace FinalTest
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.XtraForm1layoutControl1ConvertedLayout)).BeginInit();
+            this.XtraForm1layoutControl1ConvertedLayout.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1item)).BeginInit();
             this.SuspendLayout();
             // 
             // dataLayoutControl1
@@ -73,11 +80,10 @@ namespace FinalTest
             this.dataLayoutControl1.Controls.Add(this.WordTextEdit);
             this.dataLayoutControl1.Controls.Add(this.Category_IdLookUpEdit);
             this.dataLayoutControl1.DataSource = this.keywordBindingSource;
-            this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 0);
+            this.dataLayoutControl1.Location = new System.Drawing.Point(12, 12);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.Root;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(793, 508);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(769, 484);
             this.dataLayoutControl1.TabIndex = 0;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
@@ -85,9 +91,9 @@ namespace FinalTest
             // 
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.Location = new System.Drawing.Point(398, 471);
+            this.simpleButton2.Location = new System.Drawing.Point(386, 447);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(383, 25);
+            this.simpleButton2.Size = new System.Drawing.Size(371, 25);
             this.simpleButton2.StyleController = this.dataLayoutControl1;
             this.simpleButton2.TabIndex = 10;
             this.simpleButton2.Text = "new";
@@ -97,9 +103,9 @@ namespace FinalTest
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(12, 471);
+            this.simpleButton1.Location = new System.Drawing.Point(12, 447);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(382, 25);
+            this.simpleButton1.Size = new System.Drawing.Size(370, 25);
             this.simpleButton1.StyleController = this.dataLayoutControl1;
             this.simpleButton1.TabIndex = 9;
             this.simpleButton1.Text = "save";
@@ -111,7 +117,7 @@ namespace FinalTest
             this.gridControl1.Location = new System.Drawing.Point(12, 66);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(769, 401);
+            this.gridControl1.Size = new System.Drawing.Size(745, 377);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -149,7 +155,7 @@ namespace FinalTest
             this.WordTextEdit.Name = "WordTextEdit";
             this.WordTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WordTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.WordTextEdit.Size = new System.Drawing.Size(687, 26);
+            this.WordTextEdit.Size = new System.Drawing.Size(663, 26);
             this.WordTextEdit.StyleController = this.dataLayoutControl1;
             this.WordTextEdit.TabIndex = 5;
             // 
@@ -169,7 +175,7 @@ namespace FinalTest
             this.Category_IdLookUpEdit.Properties.DisplayMember = "Name";
             this.Category_IdLookUpEdit.Properties.NullText = "";
             this.Category_IdLookUpEdit.Properties.ValueMember = "Id";
-            this.Category_IdLookUpEdit.Size = new System.Drawing.Size(687, 20);
+            this.Category_IdLookUpEdit.Size = new System.Drawing.Size(663, 20);
             this.Category_IdLookUpEdit.StyleController = this.dataLayoutControl1;
             this.Category_IdLookUpEdit.TabIndex = 8;
             // 
@@ -184,7 +190,7 @@ namespace FinalTest
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup1});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(793, 508);
+            this.Root.Size = new System.Drawing.Size(769, 484);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup1
@@ -199,7 +205,7 @@ namespace FinalTest
             this.layoutControlItem3});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(773, 488);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(749, 464);
             // 
             // ItemForWord
             // 
@@ -208,7 +214,7 @@ namespace FinalTest
             this.ItemForWord.Control = this.WordTextEdit;
             this.ItemForWord.Location = new System.Drawing.Point(0, 0);
             this.ItemForWord.Name = "ItemForWord";
-            this.ItemForWord.Size = new System.Drawing.Size(773, 30);
+            this.ItemForWord.Size = new System.Drawing.Size(749, 30);
             this.ItemForWord.Text = "Word";
             this.ItemForWord.TextSize = new System.Drawing.Size(79, 20);
             // 
@@ -219,7 +225,7 @@ namespace FinalTest
             this.ItemForCategory_Id.Control = this.Category_IdLookUpEdit;
             this.ItemForCategory_Id.Location = new System.Drawing.Point(0, 30);
             this.ItemForCategory_Id.Name = "ItemForCategory_Id";
-            this.ItemForCategory_Id.Size = new System.Drawing.Size(773, 24);
+            this.ItemForCategory_Id.Size = new System.Drawing.Size(749, 24);
             this.ItemForCategory_Id.Text = "Category_Id";
             this.ItemForCategory_Id.TextSize = new System.Drawing.Size(79, 20);
             // 
@@ -228,34 +234,63 @@ namespace FinalTest
             this.layoutControlItem1.Control = this.gridControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 54);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(773, 405);
+            this.layoutControlItem1.Size = new System.Drawing.Size(749, 381);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.simpleButton1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 459);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 435);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(386, 29);
+            this.layoutControlItem2.Size = new System.Drawing.Size(374, 29);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.simpleButton2;
-            this.layoutControlItem3.Location = new System.Drawing.Point(386, 459);
+            this.layoutControlItem3.Location = new System.Drawing.Point(374, 435);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(387, 29);
+            this.layoutControlItem3.Size = new System.Drawing.Size(375, 29);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
+            // 
+            // XtraForm1layoutControl1ConvertedLayout
+            // 
+            this.XtraForm1layoutControl1ConvertedLayout.Controls.Add(this.dataLayoutControl1);
+            this.XtraForm1layoutControl1ConvertedLayout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.XtraForm1layoutControl1ConvertedLayout.Location = new System.Drawing.Point(0, 0);
+            this.XtraForm1layoutControl1ConvertedLayout.Name = "XtraForm1layoutControl1ConvertedLayout";
+            this.XtraForm1layoutControl1ConvertedLayout.Root = this.layoutControlGroup2;
+            this.XtraForm1layoutControl1ConvertedLayout.Size = new System.Drawing.Size(793, 508);
+            this.XtraForm1layoutControl1ConvertedLayout.TabIndex = 1;
+            // 
+            // layoutControlGroup2
+            // 
+            this.layoutControlGroup2.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup2.GroupBordersVisible = false;
+            this.layoutControlGroup2.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.dataLayoutControl1item});
+            this.layoutControlGroup2.Name = "layoutControlGroup2";
+            this.layoutControlGroup2.Size = new System.Drawing.Size(793, 508);
+            this.layoutControlGroup2.TextVisible = false;
+            // 
+            // dataLayoutControl1item
+            // 
+            this.dataLayoutControl1item.Control = this.dataLayoutControl1;
+            this.dataLayoutControl1item.Location = new System.Drawing.Point(0, 0);
+            this.dataLayoutControl1item.Name = "dataLayoutControl1item";
+            this.dataLayoutControl1item.Size = new System.Drawing.Size(773, 488);
+            this.dataLayoutControl1item.TextSize = new System.Drawing.Size(0, 0);
+            this.dataLayoutControl1item.TextVisible = false;
             // 
             // XtraForm1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(793, 508);
-            this.Controls.Add(this.dataLayoutControl1);
+            this.Controls.Add(this.XtraForm1layoutControl1ConvertedLayout);
             this.Name = "XtraForm1";
             this.Text = "XtraForm1";
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
@@ -273,6 +308,10 @@ namespace FinalTest
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.XtraForm1layoutControl1ConvertedLayout)).EndInit();
+            this.XtraForm1layoutControl1ConvertedLayout.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1item)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -297,5 +336,8 @@ namespace FinalTest
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
+        private DevExpress.XtraLayout.LayoutControl XtraForm1layoutControl1ConvertedLayout;
+        private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup2;
+        private DevExpress.XtraLayout.LayoutControlItem dataLayoutControl1item;
     }
 }

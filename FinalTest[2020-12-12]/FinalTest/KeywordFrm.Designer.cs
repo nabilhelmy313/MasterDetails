@@ -77,7 +77,6 @@ namespace FinalTest
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colWord = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCounter = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colCategory_Id = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -322,7 +321,7 @@ namespace FinalTest
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 20);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(233, 407);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(342, 407);
             this.dataLayoutControl1.TabIndex = 4;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
@@ -338,7 +337,7 @@ namespace FinalTest
             this.dataLayoutControl2.Location = new System.Drawing.Point(12, 12);
             this.dataLayoutControl2.Name = "dataLayoutControl2";
             this.dataLayoutControl2.Root = this.Root;
-            this.dataLayoutControl2.Size = new System.Drawing.Size(209, 383);
+            this.dataLayoutControl2.Size = new System.Drawing.Size(318, 383);
             this.dataLayoutControl2.TabIndex = 4;
             this.dataLayoutControl2.Text = "dataLayoutControl2";
             // 
@@ -347,7 +346,7 @@ namespace FinalTest
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
             this.simpleButton3.Location = new System.Drawing.Point(12, 190);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(185, 36);
+            this.simpleButton3.Size = new System.Drawing.Size(294, 36);
             this.simpleButton3.StyleController = this.dataLayoutControl2;
             this.simpleButton3.TabIndex = 9;
             this.simpleButton3.Text = "DELETE";
@@ -358,7 +357,7 @@ namespace FinalTest
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(12, 150);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(185, 36);
+            this.simpleButton2.Size = new System.Drawing.Size(294, 36);
             this.simpleButton2.StyleController = this.dataLayoutControl2;
             this.simpleButton2.TabIndex = 8;
             this.simpleButton2.Text = "SAVE";
@@ -369,7 +368,7 @@ namespace FinalTest
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
             this.simpleButton1.Location = new System.Drawing.Point(12, 110);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(185, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(294, 36);
             this.simpleButton1.StyleController = this.dataLayoutControl2;
             this.simpleButton1.TabIndex = 7;
             this.simpleButton1.Text = "NEW";
@@ -387,7 +386,7 @@ namespace FinalTest
             this.IdTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.IdTextEdit.Properties.Mask.EditMask = "N0";
             this.IdTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.IdTextEdit.Size = new System.Drawing.Size(137, 20);
+            this.IdTextEdit.Size = new System.Drawing.Size(246, 20);
             this.IdTextEdit.StyleController = this.dataLayoutControl2;
             this.IdTextEdit.TabIndex = 4;
             // 
@@ -404,7 +403,7 @@ namespace FinalTest
             this.WordTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
             this.WordTextEdit.Properties.Appearance.Options.UseFont = true;
             this.WordTextEdit.Properties.Padding = new System.Windows.Forms.Padding(5);
-            this.WordTextEdit.Size = new System.Drawing.Size(137, 36);
+            this.WordTextEdit.Size = new System.Drawing.Size(246, 36);
             this.WordTextEdit.StyleController = this.dataLayoutControl2;
             this.WordTextEdit.TabIndex = 5;
             // 
@@ -428,7 +427,7 @@ namespace FinalTest
             this.Category_IdLookUpEdit.Properties.NullText = "";
             this.Category_IdLookUpEdit.Properties.Padding = new System.Windows.Forms.Padding(5);
             this.Category_IdLookUpEdit.Properties.ValueMember = "Id";
-            this.Category_IdLookUpEdit.Size = new System.Drawing.Size(137, 30);
+            this.Category_IdLookUpEdit.Size = new System.Drawing.Size(246, 30);
             this.Category_IdLookUpEdit.StyleController = this.dataLayoutControl2;
             this.Category_IdLookUpEdit.TabIndex = 6;
             // 
@@ -443,7 +442,7 @@ namespace FinalTest
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(209, 383);
+            this.Root.Size = new System.Drawing.Size(318, 383);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -459,14 +458,14 @@ namespace FinalTest
             this.layoutControlItem4});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(189, 363);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(298, 363);
             // 
             // ItemForId
             // 
             this.ItemForId.Control = this.IdTextEdit;
             this.ItemForId.Location = new System.Drawing.Point(0, 0);
             this.ItemForId.Name = "ItemForId";
-            this.ItemForId.Size = new System.Drawing.Size(189, 24);
+            this.ItemForId.Size = new System.Drawing.Size(298, 24);
             this.ItemForId.Text = "Id";
             this.ItemForId.TextSize = new System.Drawing.Size(45, 13);
             // 
@@ -475,7 +474,7 @@ namespace FinalTest
             this.ItemForWord.Control = this.WordTextEdit;
             this.ItemForWord.Location = new System.Drawing.Point(0, 24);
             this.ItemForWord.Name = "ItemForWord";
-            this.ItemForWord.Size = new System.Drawing.Size(189, 40);
+            this.ItemForWord.Size = new System.Drawing.Size(298, 40);
             this.ItemForWord.Text = "Word";
             this.ItemForWord.TextSize = new System.Drawing.Size(45, 13);
             // 
@@ -484,7 +483,7 @@ namespace FinalTest
             this.ItemForCategory_Id.Control = this.Category_IdLookUpEdit;
             this.ItemForCategory_Id.Location = new System.Drawing.Point(0, 64);
             this.ItemForCategory_Id.Name = "ItemForCategory_Id";
-            this.ItemForCategory_Id.Size = new System.Drawing.Size(189, 34);
+            this.ItemForCategory_Id.Size = new System.Drawing.Size(298, 34);
             this.ItemForCategory_Id.Text = "Category";
             this.ItemForCategory_Id.TextSize = new System.Drawing.Size(45, 13);
             // 
@@ -493,7 +492,7 @@ namespace FinalTest
             this.layoutControlItem2.Control = this.simpleButton1;
             this.layoutControlItem2.Location = new System.Drawing.Point(0, 98);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(189, 40);
+            this.layoutControlItem2.Size = new System.Drawing.Size(298, 40);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
@@ -502,7 +501,7 @@ namespace FinalTest
             this.layoutControlItem3.Control = this.simpleButton2;
             this.layoutControlItem3.Location = new System.Drawing.Point(0, 138);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(189, 40);
+            this.layoutControlItem3.Size = new System.Drawing.Size(298, 40);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
@@ -511,7 +510,7 @@ namespace FinalTest
             this.layoutControlItem4.Control = this.simpleButton3;
             this.layoutControlItem4.Location = new System.Drawing.Point(0, 178);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(189, 185);
+            this.layoutControlItem4.Size = new System.Drawing.Size(298, 185);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
@@ -522,7 +521,7 @@ namespace FinalTest
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(233, 407);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(342, 407);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -530,7 +529,7 @@ namespace FinalTest
             this.layoutControlItem1.Control = this.dataLayoutControl2;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(213, 387);
+            this.layoutControlItem1.Size = new System.Drawing.Size(322, 387);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -538,12 +537,12 @@ namespace FinalTest
             // 
             this.gridControl1.DataSource = this.keywordBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(233, 20);
+            this.gridControl1.Location = new System.Drawing.Point(342, 20);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.categoryLookUpEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(613, 407);
+            this.gridControl1.Size = new System.Drawing.Size(504, 407);
             this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -551,7 +550,6 @@ namespace FinalTest
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colId,
             this.colWord,
             this.colCounter,
             this.colCategory_Id});
@@ -560,34 +558,28 @@ namespace FinalTest
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.Click += new System.EventHandler(this.gridView1_Click);
             // 
-            // colId
-            // 
-            this.colId.FieldName = "Id";
-            this.colId.Name = "colId";
-            this.colId.Visible = true;
-            this.colId.VisibleIndex = 0;
-            // 
             // colWord
             // 
             this.colWord.FieldName = "Word";
             this.colWord.Name = "colWord";
             this.colWord.Visible = true;
-            this.colWord.VisibleIndex = 1;
+            this.colWord.VisibleIndex = 0;
             // 
             // colCounter
             // 
             this.colCounter.FieldName = "Counter";
             this.colCounter.Name = "colCounter";
             this.colCounter.Visible = true;
-            this.colCounter.VisibleIndex = 2;
+            this.colCounter.VisibleIndex = 1;
             // 
             // colCategory_Id
             // 
+            this.colCategory_Id.Caption = "CATEGORY";
             this.colCategory_Id.ColumnEdit = this.categoryLookUpEdit1;
             this.colCategory_Id.FieldName = "Category_Id";
             this.colCategory_Id.Name = "colCategory_Id";
             this.colCategory_Id.Visible = true;
-            this.colCategory_Id.VisibleIndex = 3;
+            this.colCategory_Id.VisibleIndex = 2;
             // 
             // categoryLookUpEdit1
             // 
@@ -685,7 +677,6 @@ namespace FinalTest
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private System.Windows.Forms.BindingSource categoryBindingSource;
-        private DevExpress.XtraGrid.Columns.GridColumn colId;
         private DevExpress.XtraGrid.Columns.GridColumn colWord;
         private DevExpress.XtraGrid.Columns.GridColumn colCounter;
         private DevExpress.XtraGrid.Columns.GridColumn colCategory_Id;

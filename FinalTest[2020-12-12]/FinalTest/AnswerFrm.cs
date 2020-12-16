@@ -159,12 +159,14 @@ namespace FinalTest
         private void simpleButton2_Click(object sender, EventArgs e)
         {
             int x = int.Parse(IdTextEdit.Text);
+            
+            var text = TextTextEdit.Text;
             if (db.Answers.Where(id => id.Id == x).Any())
             {
                 try
                 {
                     Answer answer = answerBindingSource.Current as Answer;
-                    answer.Text = TextTextEdit.Text;
+                    answer.Text = text;
                     if (string.IsNullOrEmpty(Question_IdLookUpEdit.Text))
                     {
                         XtraMessageBox.Show("PLEASE ENTER THE QUESTION");
@@ -188,7 +190,7 @@ namespace FinalTest
                 try
                 {
                     Answer answer = new Answer();
-                    answer.Text = TextTextEdit.Text;
+                    answer.Text = text;
                     if (!string.IsNullOrEmpty(Question_IdLookUpEdit.Text))
                     {
                         answer.Question_Id = int.Parse(Question_IdLookUpEdit.EditValue.ToString());
@@ -235,6 +237,11 @@ namespace FinalTest
             {
                 answerBindingSource.DataSource = answer;
             }
+        }
+
+        private void AnswerFrm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

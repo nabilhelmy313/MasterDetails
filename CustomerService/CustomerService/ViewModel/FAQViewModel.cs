@@ -11,10 +11,11 @@ namespace CustomerService.ViewModel
         public List<Category> Categories{ get; set; }
         public List<Keyword> Keywords { get; set; }
         public List<Question> Questions { get; set; }
-        public List<Answer> Answers { get; set; }
+        public List<string> Answers { get; set; }
         public string CatNAme { get; set; }
         public string KeyWord { get; set; }
         public int Counter { get; set; }
+        public int Qid { get; set; }
         public string QName { get; set; }
         public DateTime QDate { get; set; }
         public bool QIsUpdate { get; set; }
@@ -23,5 +24,13 @@ namespace CustomerService.ViewModel
         public bool AIsUpdated { get; set; }
 
 
+    }
+    public class Ans
+    {
+        public int Id { get; set; }
+        public string Text { get; set; }
+        public string Photo { get; set; }
+        public DateTime DateTime { get; set; }
+        public bool IsUpdated { get; set; }
     }
 }

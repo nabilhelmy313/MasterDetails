@@ -52,7 +52,7 @@ namespace FinalTest
                     XtraMessageBox.Show("COUNTRY UPDATED SUCCUESSFULLY", "SUCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     RefershGrid();
                 }
-                else if (db.Countries.Where(i => i.Id != id).Any())
+                else
                 {
                     Country country = new Country();
                     country.Name = NameTextEdit.Text;

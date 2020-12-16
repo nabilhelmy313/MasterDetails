@@ -76,7 +76,6 @@ namespace FinalTest
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colId = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
@@ -138,7 +137,7 @@ namespace FinalTest
             this.bar2.DockCol = 0;
             this.bar2.DockRow = 0;
             this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar2.FloatLocation = new System.Drawing.Point(271, 120);
+            this.bar2.FloatLocation = new System.Drawing.Point(187, 134);
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.f, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barSubItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
@@ -533,6 +532,7 @@ namespace FinalTest
             // 
             this.gridControl1.DataSource = this.categoryBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridControl1.Location = new System.Drawing.Point(277, 24);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
@@ -545,26 +545,18 @@ namespace FinalTest
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colId,
             this.colName});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.Click += new System.EventHandler(this.gridView1_Click);
             // 
-            // colId
-            // 
-            this.colId.FieldName = "Id";
-            this.colId.Name = "colId";
-            this.colId.Visible = true;
-            this.colId.VisibleIndex = 0;
-            // 
             // colName
             // 
             this.colName.FieldName = "Name";
             this.colName.Name = "colName";
             this.colName.Visible = true;
-            this.colName.VisibleIndex = 1;
+            this.colName.VisibleIndex = 0;
             // 
             // CategoryFrm
             // 
@@ -579,6 +571,7 @@ namespace FinalTest
             this.Controls.Add(this.barDockControlTop);
             this.Name = "CategoryFrm";
             this.Text = "CategoryFrm";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
@@ -634,7 +627,6 @@ namespace FinalTest
         private DevExpress.XtraGrid.GridControl gridControl1;
         private System.Windows.Forms.BindingSource categoryBindingSource;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn colId;
         private DevExpress.XtraGrid.Columns.GridColumn colName;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl2;
