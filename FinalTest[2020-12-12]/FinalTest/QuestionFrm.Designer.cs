@@ -57,12 +57,14 @@ namespace FinalTest
             this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.dataLayoutControl2 = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.aartext = new DevExpress.XtraEditors.MemoEdit();
+            this.qartext = new DevExpress.XtraEditors.MemoEdit();
+            this.questionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.answertxt = new DevExpress.XtraEditors.MemoEdit();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.IdTextEdit = new DevExpress.XtraEditors.TextEdit();
-            this.questionBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Keyword_IdTextEdit = new DevExpress.XtraEditors.LookUpEdit();
             this.keywordBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.TextTextEdit = new DevExpress.XtraEditors.MemoEdit();
@@ -78,6 +80,8 @@ namespace FinalTest
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.textar = new DevExpress.XtraLayout.LayoutControlItem();
+            this.answerartxt = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.answerBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -85,6 +89,7 @@ namespace FinalTest
             this.AnswerLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colText = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colTextAr = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.QuestionItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -92,9 +97,11 @@ namespace FinalTest
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl2)).BeginInit();
             this.dataLayoutControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aartext.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qartext.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.questionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.answertxt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdTextEdit.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.questionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Keyword_IdTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.keywordBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextTextEdit.Properties)).BeginInit();
@@ -110,6 +117,8 @@ namespace FinalTest
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.answerartxt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.answerBindingSource)).BeginInit();
@@ -280,31 +289,35 @@ namespace FinalTest
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1037, 24);
+            this.barDockControlTop.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlTop.Size = new System.Drawing.Size(1210, 30);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 466);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 574);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1037, 0);
+            this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1210, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barDockControlLeft.Location = new System.Drawing.Point(0, 24);
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 30);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 442);
+            this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 544);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1037, 24);
+            this.barDockControlRight.Location = new System.Drawing.Point(1210, 30);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 442);
+            this.barDockControlRight.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 544);
             // 
             // barButtonItem1
             // 
@@ -352,15 +365,18 @@ namespace FinalTest
             // 
             this.dataLayoutControl1.Controls.Add(this.dataLayoutControl2);
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 24);
+            this.dataLayoutControl1.Location = new System.Drawing.Point(0, 30);
+            this.dataLayoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataLayoutControl1.Name = "dataLayoutControl1";
             this.dataLayoutControl1.Root = this.layoutControlGroup1;
-            this.dataLayoutControl1.Size = new System.Drawing.Size(505, 442);
+            this.dataLayoutControl1.Size = new System.Drawing.Size(589, 544);
             this.dataLayoutControl1.TabIndex = 4;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
             // dataLayoutControl2
             // 
+            this.dataLayoutControl2.Controls.Add(this.aartext);
+            this.dataLayoutControl2.Controls.Add(this.qartext);
             this.dataLayoutControl2.Controls.Add(this.answertxt);
             this.dataLayoutControl2.Controls.Add(this.simpleButton3);
             this.dataLayoutControl2.Controls.Add(this.simpleButton2);
@@ -371,29 +387,59 @@ namespace FinalTest
             this.dataLayoutControl2.Controls.Add(this.catlookup);
             this.dataLayoutControl2.DataSource = this.questionBindingSource;
             this.dataLayoutControl2.Location = new System.Drawing.Point(12, 12);
+            this.dataLayoutControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataLayoutControl2.Name = "dataLayoutControl2";
             this.dataLayoutControl2.Root = this.Root;
-            this.dataLayoutControl2.Size = new System.Drawing.Size(481, 418);
+            this.dataLayoutControl2.Size = new System.Drawing.Size(565, 520);
             this.dataLayoutControl2.TabIndex = 0;
             this.dataLayoutControl2.Text = "dataLayoutControl2";
             // 
+            // aartext
+            // 
+            this.aartext.Location = new System.Drawing.Point(105, 306);
+            this.aartext.MenuManager = this.barManager1;
+            this.aartext.Name = "aartext";
+            this.aartext.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aartext.Properties.Appearance.Options.UseFont = true;
+            this.aartext.Size = new System.Drawing.Size(448, 82);
+            this.aartext.StyleController = this.dataLayoutControl2;
+            this.aartext.TabIndex = 13;
+            // 
+            // qartext
+            // 
+            this.qartext.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.questionBindingSource, "TextAr", true));
+            this.qartext.Location = new System.Drawing.Point(105, 179);
+            this.qartext.MenuManager = this.barManager1;
+            this.qartext.Name = "qartext";
+            this.qartext.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qartext.Properties.Appearance.Options.UseFont = true;
+            this.qartext.Size = new System.Drawing.Size(448, 67);
+            this.qartext.StyleController = this.dataLayoutControl2;
+            this.qartext.TabIndex = 12;
+            // 
+            // questionBindingSource
+            // 
+            this.questionBindingSource.DataSource = typeof(FinalTest.Question);
+            // 
             // answertxt
             // 
-            this.answertxt.Location = new System.Drawing.Point(60, 185);
+            this.answertxt.Location = new System.Drawing.Point(105, 250);
+            this.answertxt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.answertxt.MenuManager = this.barManager1;
             this.answertxt.Name = "answertxt";
             this.answertxt.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.answertxt.Properties.Appearance.Options.UseFont = true;
-            this.answertxt.Size = new System.Drawing.Size(409, 101);
+            this.answertxt.Size = new System.Drawing.Size(448, 52);
             this.answertxt.StyleController = this.dataLayoutControl2;
             this.answertxt.TabIndex = 11;
             // 
             // simpleButton3
             // 
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(12, 330);
+            this.simpleButton3.Location = new System.Drawing.Point(12, 432);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(457, 36);
+            this.simpleButton3.Size = new System.Drawing.Size(541, 36);
             this.simpleButton3.StyleController = this.dataLayoutControl2;
             this.simpleButton3.TabIndex = 9;
             this.simpleButton3.Text = "SAVE";
@@ -402,9 +448,10 @@ namespace FinalTest
             // simpleButton2
             // 
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(12, 370);
+            this.simpleButton2.Location = new System.Drawing.Point(12, 472);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(457, 36);
+            this.simpleButton2.Size = new System.Drawing.Size(541, 36);
             this.simpleButton2.StyleController = this.dataLayoutControl2;
             this.simpleButton2.TabIndex = 8;
             this.simpleButton2.Text = "DELETE";
@@ -413,9 +460,10 @@ namespace FinalTest
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(12, 290);
+            this.simpleButton1.Location = new System.Drawing.Point(12, 392);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(457, 36);
+            this.simpleButton1.Size = new System.Drawing.Size(541, 36);
             this.simpleButton1.StyleController = this.dataLayoutControl2;
             this.simpleButton1.TabIndex = 7;
             this.simpleButton1.Text = "NEW";
@@ -426,7 +474,8 @@ namespace FinalTest
             this.IdTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.questionBindingSource, "Id", true));
             this.IdTextEdit.EditValue = "0";
             this.IdTextEdit.Enabled = false;
-            this.IdTextEdit.Location = new System.Drawing.Point(60, 12);
+            this.IdTextEdit.Location = new System.Drawing.Point(105, 12);
+            this.IdTextEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.IdTextEdit.MenuManager = this.barManager1;
             this.IdTextEdit.Name = "IdTextEdit";
             this.IdTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -435,18 +484,15 @@ namespace FinalTest
             this.IdTextEdit.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.IdTextEdit.Properties.Mask.EditMask = "N0";
             this.IdTextEdit.Properties.Mask.UseMaskAsDisplayFormat = true;
-            this.IdTextEdit.Size = new System.Drawing.Size(409, 24);
+            this.IdTextEdit.Size = new System.Drawing.Size(448, 30);
             this.IdTextEdit.StyleController = this.dataLayoutControl2;
             this.IdTextEdit.TabIndex = 4;
-            // 
-            // questionBindingSource
-            // 
-            this.questionBindingSource.DataSource = typeof(FinalTest.Question);
             // 
             // Keyword_IdTextEdit
             // 
             this.Keyword_IdTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.questionBindingSource, "Keyword_Id", true));
-            this.Keyword_IdTextEdit.Location = new System.Drawing.Point(60, 66);
+            this.Keyword_IdTextEdit.Location = new System.Drawing.Point(105, 76);
+            this.Keyword_IdTextEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Keyword_IdTextEdit.MenuManager = this.barManager1;
             this.Keyword_IdTextEdit.Name = "Keyword_IdTextEdit";
             this.Keyword_IdTextEdit.Properties.AllowNullInput = DevExpress.Utils.DefaultBoolean.True;
@@ -457,12 +503,12 @@ namespace FinalTest
             this.Keyword_IdTextEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.Keyword_IdTextEdit.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Word", "Word", 35, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Word", "Word", 41, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.Keyword_IdTextEdit.Properties.DataSource = this.keywordBindingSource;
             this.Keyword_IdTextEdit.Properties.DisplayMember = "Word";
             this.Keyword_IdTextEdit.Properties.NullText = "";
             this.Keyword_IdTextEdit.Properties.ValueMember = "Id";
-            this.Keyword_IdTextEdit.Size = new System.Drawing.Size(409, 24);
+            this.Keyword_IdTextEdit.Size = new System.Drawing.Size(448, 30);
             this.Keyword_IdTextEdit.StyleController = this.dataLayoutControl2;
             this.Keyword_IdTextEdit.TabIndex = 6;
             // 
@@ -473,19 +519,20 @@ namespace FinalTest
             // TextTextEdit
             // 
             this.TextTextEdit.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.questionBindingSource, "Text", true));
-            this.TextTextEdit.Location = new System.Drawing.Point(60, 94);
+            this.TextTextEdit.Location = new System.Drawing.Point(105, 110);
+            this.TextTextEdit.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.TextTextEdit.MenuManager = this.barManager1;
             this.TextTextEdit.Name = "TextTextEdit";
             this.TextTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.TextTextEdit.Size = new System.Drawing.Size(409, 87);
+            this.TextTextEdit.Size = new System.Drawing.Size(448, 65);
             this.TextTextEdit.StyleController = this.dataLayoutControl2;
             this.TextTextEdit.TabIndex = 5;
             this.TextTextEdit.EditValueChanged += new System.EventHandler(this.TextTextEdit_EditValueChanged);
             // 
             // catlookup
             // 
-            this.catlookup.Location = new System.Drawing.Point(60, 40);
+            this.catlookup.Location = new System.Drawing.Point(105, 46);
             this.catlookup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.catlookup.MenuManager = this.barManager1;
             this.catlookup.Name = "catlookup";
@@ -494,12 +541,12 @@ namespace FinalTest
             this.catlookup.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.catlookup.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 38, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Name", 44, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.catlookup.Properties.DataSource = this.categoryBindingSource;
             this.catlookup.Properties.DisplayMember = "Name";
             this.catlookup.Properties.NullText = "";
             this.catlookup.Properties.ValueMember = "Id";
-            this.catlookup.Size = new System.Drawing.Size(409, 22);
+            this.catlookup.Size = new System.Drawing.Size(448, 26);
             this.catlookup.StyleController = this.dataLayoutControl2;
             this.catlookup.TabIndex = 10;
             this.catlookup.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
@@ -515,7 +562,7 @@ namespace FinalTest
             this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlGroup2});
             this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(481, 418);
+            this.Root.Size = new System.Drawing.Size(565, 520);
             this.Root.TextVisible = false;
             // 
             // layoutControlGroup2
@@ -530,83 +577,102 @@ namespace FinalTest
             this.layoutControlItem4,
             this.layoutControlItem3,
             this.layoutControlItem5,
-            this.layoutControlItem6});
+            this.layoutControlItem6,
+            this.textar,
+            this.answerartxt});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
-            this.layoutControlGroup2.Size = new System.Drawing.Size(461, 398);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(545, 500);
             // 
             // ItemForId
             // 
             this.ItemForId.Control = this.IdTextEdit;
             this.ItemForId.Location = new System.Drawing.Point(0, 0);
             this.ItemForId.Name = "ItemForId";
-            this.ItemForId.Size = new System.Drawing.Size(461, 28);
+            this.ItemForId.Size = new System.Drawing.Size(545, 34);
             this.ItemForId.Text = "Id";
-            this.ItemForId.TextSize = new System.Drawing.Size(45, 13);
+            this.ItemForId.TextSize = new System.Drawing.Size(90, 16);
             // 
             // ItemForText
             // 
             this.ItemForText.Control = this.TextTextEdit;
-            this.ItemForText.Location = new System.Drawing.Point(0, 82);
+            this.ItemForText.Location = new System.Drawing.Point(0, 98);
             this.ItemForText.Name = "ItemForText";
-            this.ItemForText.Size = new System.Drawing.Size(461, 91);
+            this.ItemForText.Size = new System.Drawing.Size(545, 69);
             this.ItemForText.Text = "Question";
-            this.ItemForText.TextSize = new System.Drawing.Size(45, 13);
+            this.ItemForText.TextSize = new System.Drawing.Size(90, 16);
             // 
             // ItemForKeyword_Id
             // 
             this.ItemForKeyword_Id.Control = this.Keyword_IdTextEdit;
-            this.ItemForKeyword_Id.Location = new System.Drawing.Point(0, 54);
+            this.ItemForKeyword_Id.Location = new System.Drawing.Point(0, 64);
             this.ItemForKeyword_Id.Name = "ItemForKeyword_Id";
-            this.ItemForKeyword_Id.Size = new System.Drawing.Size(461, 28);
+            this.ItemForKeyword_Id.Size = new System.Drawing.Size(545, 34);
             this.ItemForKeyword_Id.Text = "Keyword";
-            this.ItemForKeyword_Id.TextSize = new System.Drawing.Size(45, 13);
+            this.ItemForKeyword_Id.TextSize = new System.Drawing.Size(90, 16);
             this.ItemForKeyword_Id.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.simpleButton1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 278);
+            this.layoutControlItem2.Location = new System.Drawing.Point(0, 380);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(461, 40);
+            this.layoutControlItem2.Size = new System.Drawing.Size(545, 40);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.simpleButton3;
-            this.layoutControlItem4.Location = new System.Drawing.Point(0, 318);
+            this.layoutControlItem4.Location = new System.Drawing.Point(0, 420);
             this.layoutControlItem4.Name = "layoutControlItem4";
-            this.layoutControlItem4.Size = new System.Drawing.Size(461, 40);
+            this.layoutControlItem4.Size = new System.Drawing.Size(545, 40);
             this.layoutControlItem4.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem4.TextVisible = false;
             // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.simpleButton2;
-            this.layoutControlItem3.Location = new System.Drawing.Point(0, 358);
+            this.layoutControlItem3.Location = new System.Drawing.Point(0, 460);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(461, 40);
+            this.layoutControlItem3.Size = new System.Drawing.Size(545, 40);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.catlookup;
-            this.layoutControlItem5.Location = new System.Drawing.Point(0, 28);
+            this.layoutControlItem5.Location = new System.Drawing.Point(0, 34);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(461, 26);
+            this.layoutControlItem5.Size = new System.Drawing.Size(545, 30);
             this.layoutControlItem5.Text = "Category";
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(45, 13);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(90, 16);
             // 
             // layoutControlItem6
             // 
             this.layoutControlItem6.Control = this.answertxt;
-            this.layoutControlItem6.Location = new System.Drawing.Point(0, 173);
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 238);
             this.layoutControlItem6.Name = "layoutControlItem6";
-            this.layoutControlItem6.Size = new System.Drawing.Size(461, 105);
+            this.layoutControlItem6.Size = new System.Drawing.Size(545, 56);
             this.layoutControlItem6.Text = "Answer";
-            this.layoutControlItem6.TextSize = new System.Drawing.Size(45, 13);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(90, 16);
+            // 
+            // textar
+            // 
+            this.textar.Control = this.qartext;
+            this.textar.Location = new System.Drawing.Point(0, 167);
+            this.textar.Name = "textar";
+            this.textar.Size = new System.Drawing.Size(545, 71);
+            this.textar.Text = "Question Arabic";
+            this.textar.TextSize = new System.Drawing.Size(90, 16);
+            // 
+            // answerartxt
+            // 
+            this.answerartxt.Control = this.aartext;
+            this.answerartxt.Location = new System.Drawing.Point(0, 294);
+            this.answerartxt.Name = "answerartxt";
+            this.answerartxt.Size = new System.Drawing.Size(545, 86);
+            this.answerartxt.TextSize = new System.Drawing.Size(90, 16);
             // 
             // layoutControlGroup1
             // 
@@ -615,7 +681,7 @@ namespace FinalTest
             this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
             this.layoutControlItem1});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(505, 442);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(589, 544);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // layoutControlItem1
@@ -623,7 +689,7 @@ namespace FinalTest
             this.layoutControlItem1.Control = this.dataLayoutControl2;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(485, 422);
+            this.layoutControlItem1.Size = new System.Drawing.Size(569, 524);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -637,7 +703,7 @@ namespace FinalTest
             this.keywordLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.keywordLookUpEdit1.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Word", "Word", 35, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Word", "Word", 41, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.keywordLookUpEdit1.DataSource = this.keywordBindingSource;
             this.keywordLookUpEdit1.DisplayMember = "Word";
             this.keywordLookUpEdit1.Name = "keywordLookUpEdit1";
@@ -659,7 +725,9 @@ namespace FinalTest
             this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gridView1.Appearance.Row.Options.UseFont = true;
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colText});
+            this.colText,
+            this.colTextAr});
+            this.gridView1.DetailHeight = 431;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -668,22 +736,36 @@ namespace FinalTest
             // colText
             // 
             this.colText.FieldName = "Text";
+            this.colText.MinWidth = 25;
             this.colText.Name = "colText";
             this.colText.Visible = true;
             this.colText.VisibleIndex = 0;
+            this.colText.Width = 94;
+            // 
+            // colTextAr
+            // 
+            this.colTextAr.FieldName = "TextAr";
+            this.colTextAr.MinWidth = 25;
+            this.colTextAr.Name = "colTextAr";
+            this.colTextAr.Visible = true;
+            this.colTextAr.VisibleIndex = 1;
+            this.colTextAr.Width = 94;
             // 
             // gridControl1
             // 
             this.gridControl1.DataSource = this.questionBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(505, 24);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridControl1.Location = new System.Drawing.Point(589, 30);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.keywordLookUpEdit1,
             this.AnswerLookUpEdit1,
             this.QuestionItemLookUpEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(532, 442);
+            this.gridControl1.Size = new System.Drawing.Size(621, 544);
             this.gridControl1.TabIndex = 5;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -695,7 +777,7 @@ namespace FinalTest
             this.QuestionItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.QuestionItemLookUpEdit1.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
-            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Text", "Text", 31, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Text", "Text", 36, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
             this.QuestionItemLookUpEdit1.DataSource = this.questionBindingSource;
             this.QuestionItemLookUpEdit1.DisplayMember = "Text";
             this.QuestionItemLookUpEdit1.Name = "QuestionItemLookUpEdit1";
@@ -704,15 +786,16 @@ namespace FinalTest
             // 
             // QuestionFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 466);
+            this.ClientSize = new System.Drawing.Size(1210, 574);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.dataLayoutControl1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "QuestionFrm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QuestionFrm";
@@ -723,9 +806,11 @@ namespace FinalTest
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl2)).EndInit();
             this.dataLayoutControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.aartext.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qartext.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.questionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.answertxt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdTextEdit.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.questionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Keyword_IdTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.keywordBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TextTextEdit.Properties)).EndInit();
@@ -741,6 +826,8 @@ namespace FinalTest
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.answerartxt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.answerBindingSource)).EndInit();
@@ -812,5 +899,10 @@ namespace FinalTest
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit keywordLookUpEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit AnswerLookUpEdit1;
         private DevExpress.XtraGrid.Columns.GridColumn colText;
+        private DevExpress.XtraGrid.Columns.GridColumn colTextAr;
+        private DevExpress.XtraEditors.MemoEdit aartext;
+        private DevExpress.XtraEditors.MemoEdit qartext;
+        private DevExpress.XtraLayout.LayoutControlItem textar;
+        private DevExpress.XtraLayout.LayoutControlItem answerartxt;
     }
 }

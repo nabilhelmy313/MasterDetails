@@ -25,6 +25,7 @@
           <Property Name="DateTime" Type="datetime" Nullable="false" />
           <Property Name="IsUpdated" Type="bit" Nullable="false" />
           <Property Name="Question_Id" Type="int" />
+          <Property Name="TextAr" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Branches">
           <Key>
@@ -38,6 +39,7 @@
           <Property Name="Phone1" Type="nvarchar(max)" />
           <Property Name="Phone2" Type="nvarchar(max)" />
           <Property Name="City_Id" Type="int" />
+          <Property Name="NameAr" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Categories">
           <Key>
@@ -45,6 +47,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="NameAr" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Cities">
           <Key>
@@ -53,6 +56,7 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" />
           <Property Name="Country_Id" Type="int" />
+          <Property Name="NameAr" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Countries">
           <Key>
@@ -60,6 +64,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="NameAr" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Departments">
           <Key>
@@ -67,6 +72,7 @@
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="NameAr" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Employees">
           <Key>
@@ -80,6 +86,7 @@
           <Property Name="Role" Type="nvarchar(max)" />
           <Property Name="Branch_Id" Type="int" />
           <Property Name="Department_Id" Type="int" />
+          <Property Name="NameAr" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Keywords">
           <Key>
@@ -99,6 +106,7 @@
           <Property Name="DateTime" Type="datetime" Nullable="false" />
           <Property Name="IsUpdated" Type="bit" Nullable="false" />
           <Property Name="Keyword_Id" Type="int" />
+          <Property Name="TextAr" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="sysdiagrams">
           <Key>
@@ -263,6 +271,7 @@
           <Property Name="City_Id" Type="Int32" />
           <NavigationProperty Name="City" Relationship="Self.FK_dbo_Branches_dbo_Cities_City_Id" FromRole="Branches" ToRole="Cities" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_dbo_Employees_dbo_Branches_Branch_Id" FromRole="Branches" ToRole="Employees" />
+          <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="City">
           <Key>
@@ -273,6 +282,7 @@
           <Property Name="Country_Id" Type="Int32" />
           <NavigationProperty Name="Branches" Relationship="Self.FK_dbo_Branches_dbo_Cities_City_Id" FromRole="Cities" ToRole="Branches" />
           <NavigationProperty Name="Country" Relationship="Self.FK_dbo_Cities_dbo_Countries_Country_Id" FromRole="Cities" ToRole="Countries" />
+          <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Country">
           <Key>
@@ -281,6 +291,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Cities" Relationship="Self.FK_dbo_Cities_dbo_Countries_Country_Id" FromRole="Countries" ToRole="Cities" />
+          <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Department">
           <Key>
@@ -289,6 +300,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Employees" Relationship="Self.FK_dbo_Employees_dbo_Departments_Department_Id" FromRole="Departments" ToRole="Employees" />
+          <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Employee">
           <Key>
@@ -304,6 +316,7 @@
           <Property Name="Department_Id" Type="Int32" />
           <NavigationProperty Name="Branch" Relationship="Self.FK_dbo_Employees_dbo_Branches_Branch_Id" FromRole="Employees" ToRole="Branches" />
           <NavigationProperty Name="Department" Relationship="Self.FK_dbo_Employees_dbo_Departments_Department_Id" FromRole="Employees" ToRole="Departments" />
+          <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -415,6 +428,7 @@
           <Property Name="IsUpdated" Type="Boolean" Nullable="false" />
           <Property Name="Question_Id" Type="Int32" />
           <NavigationProperty Name="Question" Relationship="custservModel.FK_dbo_Answers_dbo_Questions_Question_Id" FromRole="Answer" ToRole="Question" />
+          <Property Name="TextAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Category">
           <Key>
@@ -423,6 +437,7 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Keywords" Relationship="custservModel.FK_dbo_Keywords_dbo_Categories_Category_Id" FromRole="Category" ToRole="Keyword" />
+          <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Keyword">
           <Key>
@@ -446,6 +461,7 @@
           <Property Name="Keyword_Id" Type="Int32" />
           <NavigationProperty Name="Answers" Relationship="custservModel.FK_dbo_Answers_dbo_Questions_Question_Id" FromRole="Question" ToRole="Answer" />
           <NavigationProperty Name="Keyword" Relationship="custservModel.FK_dbo_Questions_dbo_Keywords_Keyword_Id" FromRole="Question" ToRole="Keyword" />
+          <Property Name="TextAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_dbo_Answers_dbo_Questions_Question_Id">
           <End Type="custservModel.Question" Role="Question" Multiplicity="0..1" />
@@ -502,6 +518,7 @@
           <EntitySetMapping Name="Branches">
             <EntityTypeMapping TypeName="custservModel.Branch">
               <MappingFragment StoreEntitySet="Branches">
+                <ScalarProperty Name="NameAr" ColumnName="NameAr" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Address" ColumnName="Address" />
@@ -516,6 +533,7 @@
           <EntitySetMapping Name="Cities">
             <EntityTypeMapping TypeName="custservModel.City">
               <MappingFragment StoreEntitySet="Cities">
+                <ScalarProperty Name="NameAr" ColumnName="NameAr" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Country_Id" ColumnName="Country_Id" />
@@ -525,6 +543,7 @@
           <EntitySetMapping Name="Countries">
             <EntityTypeMapping TypeName="custservModel.Country">
               <MappingFragment StoreEntitySet="Countries">
+                <ScalarProperty Name="NameAr" ColumnName="NameAr" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
@@ -533,6 +552,7 @@
           <EntitySetMapping Name="Departments">
             <EntityTypeMapping TypeName="custservModel.Department">
               <MappingFragment StoreEntitySet="Departments">
+                <ScalarProperty Name="NameAr" ColumnName="NameAr" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
               </MappingFragment>
@@ -541,6 +561,7 @@
           <EntitySetMapping Name="Employees">
             <EntityTypeMapping TypeName="custservModel.Employee">
               <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="NameAr" ColumnName="NameAr" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Phone1" ColumnName="Phone1" />
@@ -566,6 +587,7 @@
           <EntitySetMapping Name="Answers">
             <EntityTypeMapping TypeName="custservModel.Answer">
               <MappingFragment StoreEntitySet="Answers">
+                <ScalarProperty Name="TextAr" ColumnName="TextAr" />
                 <ScalarProperty Name="Question_Id" ColumnName="Question_Id" />
                 <ScalarProperty Name="IsUpdated" ColumnName="IsUpdated" />
                 <ScalarProperty Name="DateTime" ColumnName="DateTime" />
@@ -578,6 +600,7 @@
           <EntitySetMapping Name="Categories">
             <EntityTypeMapping TypeName="custservModel.Category">
               <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="NameAr" ColumnName="NameAr" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
@@ -596,6 +619,7 @@
           <EntitySetMapping Name="Questions">
             <EntityTypeMapping TypeName="custservModel.Question">
               <MappingFragment StoreEntitySet="Questions">
+                <ScalarProperty Name="TextAr" ColumnName="TextAr" />
                 <ScalarProperty Name="Keyword_Id" ColumnName="Keyword_Id" />
                 <ScalarProperty Name="IsUpdated" ColumnName="IsUpdated" />
                 <ScalarProperty Name="DateTime" ColumnName="DateTime" />

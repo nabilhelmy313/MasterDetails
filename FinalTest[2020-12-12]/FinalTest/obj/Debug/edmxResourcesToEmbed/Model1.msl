@@ -14,6 +14,7 @@
     <EntitySetMapping Name="Branches">
       <EntityTypeMapping TypeName="custservModel.Branch">
         <MappingFragment StoreEntitySet="Branches">
+          <ScalarProperty Name="NameAr" ColumnName="NameAr" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Address" ColumnName="Address" />
@@ -28,6 +29,7 @@
     <EntitySetMapping Name="Cities">
       <EntityTypeMapping TypeName="custservModel.City">
         <MappingFragment StoreEntitySet="Cities">
+          <ScalarProperty Name="NameAr" ColumnName="NameAr" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Country_Id" ColumnName="Country_Id" />
@@ -37,6 +39,7 @@
     <EntitySetMapping Name="Countries">
       <EntityTypeMapping TypeName="custservModel.Country">
         <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="NameAr" ColumnName="NameAr" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
@@ -45,6 +48,7 @@
     <EntitySetMapping Name="Departments">
       <EntityTypeMapping TypeName="custservModel.Department">
         <MappingFragment StoreEntitySet="Departments">
+          <ScalarProperty Name="NameAr" ColumnName="NameAr" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
@@ -53,6 +57,7 @@
     <EntitySetMapping Name="Employees">
       <EntityTypeMapping TypeName="custservModel.Employee">
         <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="NameAr" ColumnName="NameAr" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Phone1" ColumnName="Phone1" />
@@ -78,6 +83,7 @@
     <EntitySetMapping Name="Answers">
       <EntityTypeMapping TypeName="custservModel.Answer">
         <MappingFragment StoreEntitySet="Answers">
+          <ScalarProperty Name="TextAr" ColumnName="TextAr" />
           <ScalarProperty Name="Question_Id" ColumnName="Question_Id" />
           <ScalarProperty Name="IsUpdated" ColumnName="IsUpdated" />
           <ScalarProperty Name="DateTime" ColumnName="DateTime" />
@@ -90,6 +96,7 @@
     <EntitySetMapping Name="Categories">
       <EntityTypeMapping TypeName="custservModel.Category">
         <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="NameAr" ColumnName="NameAr" />
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
@@ -108,6 +115,7 @@
     <EntitySetMapping Name="Questions">
       <EntityTypeMapping TypeName="custservModel.Question">
         <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="TextAr" ColumnName="TextAr" />
           <ScalarProperty Name="Keyword_Id" ColumnName="Keyword_Id" />
           <ScalarProperty Name="IsUpdated" ColumnName="IsUpdated" />
           <ScalarProperty Name="DateTime" ColumnName="DateTime" />

@@ -20,6 +20,7 @@
     <Property Name="DateTime" Type="datetime" Nullable="false" />
     <Property Name="IsUpdated" Type="bit" Nullable="false" />
     <Property Name="Question_Id" Type="int" />
+    <Property Name="TextAr" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Branches">
     <Key>
@@ -33,6 +34,7 @@
     <Property Name="Phone1" Type="nvarchar(max)" />
     <Property Name="Phone2" Type="nvarchar(max)" />
     <Property Name="City_Id" Type="int" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Categories">
     <Key>
@@ -40,6 +42,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Cities">
     <Key>
@@ -48,6 +51,7 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" />
     <Property Name="Country_Id" Type="int" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Countries">
     <Key>
@@ -55,6 +59,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Departments">
     <Key>
@@ -62,6 +67,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Employees">
     <Key>
@@ -75,6 +81,7 @@
     <Property Name="Role" Type="nvarchar(max)" />
     <Property Name="Branch_Id" Type="int" />
     <Property Name="Department_Id" Type="int" />
+    <Property Name="NameAr" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="Keywords">
     <Key>
@@ -94,6 +101,7 @@
     <Property Name="DateTime" Type="datetime" Nullable="false" />
     <Property Name="IsUpdated" Type="bit" Nullable="false" />
     <Property Name="Keyword_Id" Type="int" />
+    <Property Name="TextAr" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>

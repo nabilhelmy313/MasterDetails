@@ -23,6 +23,7 @@ namespace FinalTest
         public int Id { get; set; }
         public string Name { get; set; }
         public Nullable<int> Country_Id { get; set; }
+        public string NameAr { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Branch> Branches { get; set; }

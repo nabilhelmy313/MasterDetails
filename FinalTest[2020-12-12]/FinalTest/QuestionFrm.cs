@@ -177,11 +177,14 @@ namespace FinalTest
                 if (answer.Count()!=0)
                 {
                     var an = db.Answers.Where(a => a.Question_Id == question.Id).FirstOrDefault().Text;
+                    var ar=db.Answers.Where(a => a.Question_Id == question.Id).FirstOrDefault().TextAr; 
                     answertxt.Text = an;
+                    aartext.Text=ar;
                 }
                 else
                 {
                     answertxt.Text = "";
+                    aartext.Text = "";
                 }
             }
         }
@@ -201,6 +204,9 @@ namespace FinalTest
                 {
                     Question question = questionBindingSource.Current as Question;
                     question.Text = TextTextEdit.Text;
+                    question.TextAr = qartext.Text;
+                    question.DateTime = DateTime.Now;
+                    question.IsUpdated = true;
                     if (string.IsNullOrEmpty(Keyword_IdTextEdit.Text))
                     {
                         Keyword keyword = new Keyword()
@@ -216,8 +222,7 @@ namespace FinalTest
                     {
                         question.Keyword_Id = int.Parse(Keyword_IdTextEdit.EditValue.ToString());
                     }
-                    question.DateTime = DateTime.Now;
-                    question.IsUpdated = true;
+                    
                     db.Questions.AddOrUpdate(question);
                     db.SaveChanges();
                     var qid = question.Id;
@@ -231,6 +236,7 @@ namespace FinalTest
                             Answer aa = new Answer();
                             aa.Id = ansId;
                             aa.Text = answertxt.Text;
+                            aa.TextAr = aartext.Text;
                             aa.IsUpdated = true;
                             aa.DateTime = DateTime.Now;
                             aa.Question_Id = qid;
@@ -246,6 +252,7 @@ namespace FinalTest
 
                             answer.Question_Id = qid;
                             answer.Text = answertxt.Text;
+                            answer.Text = aartext.Text;
                             answer.IsUpdated = false;
                             answer.DateTime = DateTime.Now;
                             db.Answers.Add(answer);
@@ -266,6 +273,9 @@ namespace FinalTest
                 {
                     Question question = new Question();
                     question.Text = TextTextEdit.Text;
+                    question.TextAr = qartext.Text;
+                    question.DateTime = DateTime.Now;
+                    question.IsUpdated = false;
                     if (string.IsNullOrEmpty(Keyword_IdTextEdit.Text))
                     {
                         Keyword keyword = new Keyword()
@@ -281,8 +291,7 @@ namespace FinalTest
                     {
                         question.Keyword_Id = int.Parse(Keyword_IdTextEdit.EditValue.ToString());
                     }
-                    question.DateTime = DateTime.Now;
-                    question.IsUpdated = false;
+                    
                     db.Questions.Add(question);
                     db.SaveChanges();
                     var qid = question.Id;
@@ -292,6 +301,7 @@ namespace FinalTest
                         Answer answer = new Answer();
                         answer.Question_Id = qid;
                         answer.Text = answertxt.Text;
+                        answer.TextAr = aartext.Text;
                         answer.IsUpdated = false;
                         answer.DateTime = DateTime.Now;
                         db.Answers.Add(answer);

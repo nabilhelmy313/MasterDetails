@@ -22,6 +22,7 @@ namespace FinalTest
         public string Role { get; set; }
         public Nullable<int> Branch_Id { get; set; }
         public Nullable<int> Department_Id { get; set; }
+        public string NameAr { get; set; }
     
         public virtual Branch Branch { get; set; }
         public virtual Department Department { get; set; }

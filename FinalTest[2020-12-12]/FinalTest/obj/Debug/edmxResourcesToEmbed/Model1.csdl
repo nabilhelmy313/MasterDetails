@@ -24,6 +24,7 @@
     <Property Name="City_Id" Type="Int32" />
     <NavigationProperty Name="City" Relationship="Self.FK_dbo_Branches_dbo_Cities_City_Id" FromRole="Branches" ToRole="Cities" />
     <NavigationProperty Name="Employees" Relationship="Self.FK_dbo_Employees_dbo_Branches_Branch_Id" FromRole="Branches" ToRole="Employees" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="City">
     <Key>
@@ -34,6 +35,7 @@
     <Property Name="Country_Id" Type="Int32" />
     <NavigationProperty Name="Branches" Relationship="Self.FK_dbo_Branches_dbo_Cities_City_Id" FromRole="Cities" ToRole="Branches" />
     <NavigationProperty Name="Country" Relationship="Self.FK_dbo_Cities_dbo_Countries_Country_Id" FromRole="Cities" ToRole="Countries" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Country">
     <Key>
@@ -42,6 +44,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Cities" Relationship="Self.FK_dbo_Cities_dbo_Countries_Country_Id" FromRole="Countries" ToRole="Cities" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Department">
     <Key>
@@ -50,6 +53,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Employees" Relationship="Self.FK_dbo_Employees_dbo_Departments_Department_Id" FromRole="Departments" ToRole="Employees" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Employee">
     <Key>
@@ -65,6 +69,7 @@
     <Property Name="Department_Id" Type="Int32" />
     <NavigationProperty Name="Branch" Relationship="Self.FK_dbo_Employees_dbo_Branches_Branch_Id" FromRole="Employees" ToRole="Branches" />
     <NavigationProperty Name="Department" Relationship="Self.FK_dbo_Employees_dbo_Departments_Department_Id" FromRole="Employees" ToRole="Departments" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="sysdiagram">
     <Key>
@@ -176,6 +181,7 @@
     <Property Name="IsUpdated" Type="Boolean" Nullable="false" />
     <Property Name="Question_Id" Type="Int32" />
     <NavigationProperty Name="Question" Relationship="custservModel.FK_dbo_Answers_dbo_Questions_Question_Id" FromRole="Answer" ToRole="Question" />
+    <Property Name="TextAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Category">
     <Key>
@@ -184,6 +190,7 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Keywords" Relationship="custservModel.FK_dbo_Keywords_dbo_Categories_Category_Id" FromRole="Category" ToRole="Keyword" />
+    <Property Name="NameAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Keyword">
     <Key>
@@ -207,6 +214,7 @@
     <Property Name="Keyword_Id" Type="Int32" />
     <NavigationProperty Name="Answers" Relationship="custservModel.FK_dbo_Answers_dbo_Questions_Question_Id" FromRole="Question" ToRole="Answer" />
     <NavigationProperty Name="Keyword" Relationship="custservModel.FK_dbo_Questions_dbo_Keywords_Keyword_Id" FromRole="Question" ToRole="Keyword" />
+    <Property Name="TextAr" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
   </EntityType>
   <Association Name="FK_dbo_Answers_dbo_Questions_Question_Id">
     <End Type="custservModel.Question" Role="Question" Multiplicity="0..1" />

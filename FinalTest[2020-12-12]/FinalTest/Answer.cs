@@ -20,6 +20,7 @@ namespace FinalTest
         public System.DateTime DateTime { get; set; }
         public bool IsUpdated { get; set; }
         public Nullable<int> Question_Id { get; set; }
+        public string TextAr { get; set; }
     
         public virtual Question Question { get; set; }
     }

@@ -870,24 +870,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FinalTest.exe" size="648688">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FinalTest.exe" size="653296">
       <assemblyIdentity name="FinalTest" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7gtk+VVdACSnGWrCPQU7bWY5axqvaayPVUBwe/JfdBs=</dsig:DigestValue>
+        <dsig:DigestValue>5T6SQTOIXL/S+PYyGC6bUMaeVAMQfN7kjuSqr9PPc98=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="FinalTest.exe.config" size="1192">
+  <file name="FinalTest.exe.config" size="1145">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>ssCWQHL/y6Ok583kFAn9T9bCxwGwJMmn2ChJI9B7xF8=</dsig:DigestValue>
+      <dsig:DigestValue>0W7DTNPILOCHU5yibSU8bE1LlU+QzIs3WkAKi6YjeH8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Model1.Context.tt" size="22930">
