@@ -870,14 +870,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FinalTest.exe" size="642032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="FinalTest.exe" size="648688">
       <assemblyIdentity name="FinalTest" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rjYoRnKkNSI1AJuMo4eI1PBHLn+XGw3btFAK6RCoDzI=</dsig:DigestValue>
+        <dsig:DigestValue>7gtk+VVdACSnGWrCPQU7bWY5axqvaayPVUBwe/JfdBs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

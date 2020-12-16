@@ -27,6 +27,7 @@ namespace FinalTest
             gridControl1.DataSource = db.Questions.ToList();
             keywordBindingSource.DataSource = db.Keywords.ToList();
             categoryBindingSource.DataSource = db.Categories.ToList();
+            answerBindingSource.DataSource = db.Categories.ToList();
         }
         private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -167,23 +168,35 @@ namespace FinalTest
         private void gridView1_Click(object sender, EventArgs e)
         {
             Question question = gridView1.GetFocusedRow() as Question;
-
-            if (question!=null)
+             ICollection<Answer> answer = question.Answers;
+            if (question != null)
             {
                 questionBindingSource.DataSource = question;
+               
+
+                if (answer.Count()!=0)
+                {
+                    var an = db.Answers.Where(a => a.Question_Id == question.Id).FirstOrDefault().Text;
+                    answertxt.Text = an;
+                }
+                else
+                {
+                    answertxt.Text = "";
+                }
             }
         }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-           int x = int.Parse(IdTextEdit.Text);
-           if (string.IsNullOrEmpty(catlookup.Text))
-                    {
-                        XtraMessageBox.Show("PLEASE SELECT CATEGORY","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                        return;
-                    }
-            if (db.Questions.Where(id=>id.Id==x).Any())
+            int x = int.Parse(IdTextEdit.Text);
+            if (string.IsNullOrEmpty(catlookup.Text))
             {
+                XtraMessageBox.Show("PLEASE SELECT CATEGORY", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (db.Questions.Where(id => id.Id == x).Any())
+            {
+                Answer answer = new Answer();
                 try
                 {
                     Question question = questionBindingSource.Current as Question;
@@ -207,6 +220,38 @@ namespace FinalTest
                     question.IsUpdated = true;
                     db.Questions.AddOrUpdate(question);
                     db.SaveChanges();
+                    var qid = question.Id;
+                    //UPDATE ANSWER IF EXISIT
+                    ICollection<Answer> answers = question.Answers;
+                    if (answers.Count() != 0)
+                    {
+                        var ansId = db.Answers.Where(a => a.Question_Id == qid).FirstOrDefault().Id;
+                        if (!string.IsNullOrEmpty(answertxt.Text))
+                        {
+                            Answer aa = new Answer();
+                            aa.Id = ansId;
+                            aa.Text = answertxt.Text;
+                            aa.IsUpdated = true;
+                            aa.DateTime = DateTime.Now;
+                            aa.Question_Id = qid;
+                            db.Answers.AddOrUpdate(aa);
+                            db.SaveChanges();
+                        }
+                    }
+                    else
+                    {
+                        if (!string.IsNullOrEmpty(answertxt.Text))
+                        {
+
+
+                            answer.Question_Id = qid;
+                            answer.Text = answertxt.Text;
+                            answer.IsUpdated = false;
+                            answer.DateTime = DateTime.Now;
+                            db.Answers.Add(answer);
+                            db.SaveChanges();
+                        }
+                    }
                     XtraMessageBox.Show("QUESTION UPDATED SUCCUESSFULLY");
                     RefreshGrid();
                 }
@@ -240,6 +285,19 @@ namespace FinalTest
                     question.IsUpdated = false;
                     db.Questions.Add(question);
                     db.SaveChanges();
+                    var qid = question.Id;
+                  
+                    if (!string.IsNullOrEmpty(answertxt.Text))
+                    {
+                        Answer answer = new Answer();
+                        answer.Question_Id = qid;
+                        answer.Text = answertxt.Text;
+                        answer.IsUpdated = false;
+                        answer.DateTime = DateTime.Now;
+                        db.Answers.Add(answer);
+                        db.SaveChanges();
+                    }
+                    
                     XtraMessageBox.Show("QUESTION ADD SUCCUESSFULLY");
                     RefreshGrid();
 
@@ -282,6 +340,11 @@ namespace FinalTest
             var row = look.GetSelectedDataRow() as Category;
             var id = row.Id;
             keywordBindingSource.DataSource = db.Keywords.Where(i => i.Category_Id == id).ToList();
+        }
+
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

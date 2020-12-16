@@ -57,6 +57,7 @@ namespace FinalTest
             this.barButtonItem16 = new DevExpress.XtraBars.BarButtonItem();
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
             this.dataLayoutControl2 = new DevExpress.XtraDataLayout.DataLayoutControl();
+            this.answertxt = new DevExpress.XtraEditors.MemoEdit();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
@@ -76,18 +77,22 @@ namespace FinalTest
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.answerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.keywordLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.AnswerLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colText = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDateTime = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.keywordLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.QuestionItemLookUpEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl2)).BeginInit();
             this.dataLayoutControl2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.answertxt.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdTextEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.questionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Keyword_IdTextEdit.Properties)).BeginInit();
@@ -104,11 +109,15 @@ namespace FinalTest
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.answerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.keywordLookUpEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AnswerLookUpEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionItemLookUpEdit1)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -352,6 +361,7 @@ namespace FinalTest
             // 
             // dataLayoutControl2
             // 
+            this.dataLayoutControl2.Controls.Add(this.answertxt);
             this.dataLayoutControl2.Controls.Add(this.simpleButton3);
             this.dataLayoutControl2.Controls.Add(this.simpleButton2);
             this.dataLayoutControl2.Controls.Add(this.simpleButton1);
@@ -364,8 +374,19 @@ namespace FinalTest
             this.dataLayoutControl2.Name = "dataLayoutControl2";
             this.dataLayoutControl2.Root = this.Root;
             this.dataLayoutControl2.Size = new System.Drawing.Size(481, 418);
-            this.dataLayoutControl2.TabIndex = 4;
+            this.dataLayoutControl2.TabIndex = 0;
             this.dataLayoutControl2.Text = "dataLayoutControl2";
+            // 
+            // answertxt
+            // 
+            this.answertxt.Location = new System.Drawing.Point(60, 185);
+            this.answertxt.MenuManager = this.barManager1;
+            this.answertxt.Name = "answertxt";
+            this.answertxt.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.answertxt.Properties.Appearance.Options.UseFont = true;
+            this.answertxt.Size = new System.Drawing.Size(409, 101);
+            this.answertxt.StyleController = this.dataLayoutControl2;
+            this.answertxt.TabIndex = 11;
             // 
             // simpleButton3
             // 
@@ -457,7 +478,7 @@ namespace FinalTest
             this.TextTextEdit.Name = "TextTextEdit";
             this.TextTextEdit.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextTextEdit.Properties.Appearance.Options.UseFont = true;
-            this.TextTextEdit.Size = new System.Drawing.Size(409, 192);
+            this.TextTextEdit.Size = new System.Drawing.Size(409, 87);
             this.TextTextEdit.StyleController = this.dataLayoutControl2;
             this.TextTextEdit.TabIndex = 5;
             this.TextTextEdit.EditValueChanged += new System.EventHandler(this.TextTextEdit_EditValueChanged);
@@ -508,7 +529,8 @@ namespace FinalTest
             this.layoutControlItem2,
             this.layoutControlItem4,
             this.layoutControlItem3,
-            this.layoutControlItem5});
+            this.layoutControlItem5,
+            this.layoutControlItem6});
             this.layoutControlGroup2.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup2.Name = "autoGeneratedGroup0";
             this.layoutControlGroup2.Size = new System.Drawing.Size(461, 398);
@@ -527,7 +549,7 @@ namespace FinalTest
             this.ItemForText.Control = this.TextTextEdit;
             this.ItemForText.Location = new System.Drawing.Point(0, 82);
             this.ItemForText.Name = "ItemForText";
-            this.ItemForText.Size = new System.Drawing.Size(461, 196);
+            this.ItemForText.Size = new System.Drawing.Size(461, 91);
             this.ItemForText.Text = "Question";
             this.ItemForText.TextSize = new System.Drawing.Size(45, 13);
             // 
@@ -539,6 +561,7 @@ namespace FinalTest
             this.ItemForKeyword_Id.Size = new System.Drawing.Size(461, 28);
             this.ItemForKeyword_Id.Text = "Keyword";
             this.ItemForKeyword_Id.TextSize = new System.Drawing.Size(45, 13);
+            this.ItemForKeyword_Id.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
             // layoutControlItem2
             // 
@@ -576,6 +599,15 @@ namespace FinalTest
             this.layoutControlItem5.Text = "Category";
             this.layoutControlItem5.TextSize = new System.Drawing.Size(45, 13);
             // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.answertxt;
+            this.layoutControlItem6.Location = new System.Drawing.Point(0, 173);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(461, 105);
+            this.layoutControlItem6.Text = "Answer";
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(45, 13);
+            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -595,45 +627,9 @@ namespace FinalTest
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
-            // gridControl1
+            // answerBindingSource
             // 
-            this.gridControl1.DataSource = this.questionBindingSource;
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.Location = new System.Drawing.Point(505, 24);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
-            this.keywordLookUpEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(532, 442);
-            this.gridControl1.TabIndex = 5;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridView1.Appearance.Row.Options.UseFont = true;
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colText,
-            this.colDateTime});
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsBehavior.Editable = false;
-            this.gridView1.Click += new System.EventHandler(this.gridView1_Click);
-            // 
-            // colText
-            // 
-            this.colText.FieldName = "Text";
-            this.colText.Name = "colText";
-            this.colText.Visible = true;
-            this.colText.VisibleIndex = 0;
-            // 
-            // colDateTime
-            // 
-            this.colDateTime.FieldName = "DateTime";
-            this.colDateTime.Name = "colDateTime";
-            this.colDateTime.Visible = true;
-            this.colDateTime.VisibleIndex = 1;
+            this.answerBindingSource.DataSource = typeof(FinalTest.Answer);
             // 
             // keywordLookUpEdit1
             // 
@@ -646,6 +642,65 @@ namespace FinalTest
             this.keywordLookUpEdit1.DisplayMember = "Word";
             this.keywordLookUpEdit1.Name = "keywordLookUpEdit1";
             this.keywordLookUpEdit1.ValueMember = "Id";
+            // 
+            // AnswerLookUpEdit1
+            // 
+            this.AnswerLookUpEdit1.AutoHeight = false;
+            this.AnswerLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.AnswerLookUpEdit1.DataSource = this.answerBindingSource;
+            this.AnswerLookUpEdit1.DisplayMember = "Text";
+            this.AnswerLookUpEdit1.Name = "AnswerLookUpEdit1";
+            this.AnswerLookUpEdit1.NullText = "";
+            this.AnswerLookUpEdit1.ValueMember = "Id";
+            // 
+            // gridView1
+            // 
+            this.gridView1.Appearance.Row.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gridView1.Appearance.Row.Options.UseFont = true;
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colText});
+            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.Editable = false;
+            this.gridView1.Click += new System.EventHandler(this.gridView1_Click);
+            // 
+            // colText
+            // 
+            this.colText.FieldName = "Text";
+            this.colText.Name = "colText";
+            this.colText.Visible = true;
+            this.colText.VisibleIndex = 0;
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.DataSource = this.questionBindingSource;
+            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.Location = new System.Drawing.Point(505, 24);
+            this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
+            this.keywordLookUpEdit1,
+            this.AnswerLookUpEdit1,
+            this.QuestionItemLookUpEdit1});
+            this.gridControl1.Size = new System.Drawing.Size(532, 442);
+            this.gridControl1.TabIndex = 5;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridView1});
+            this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
+            // 
+            // QuestionItemLookUpEdit1
+            // 
+            this.QuestionItemLookUpEdit1.AutoHeight = false;
+            this.QuestionItemLookUpEdit1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.QuestionItemLookUpEdit1.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Text", "Text", 31, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Near, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default)});
+            this.QuestionItemLookUpEdit1.DataSource = this.questionBindingSource;
+            this.QuestionItemLookUpEdit1.DisplayMember = "Text";
+            this.QuestionItemLookUpEdit1.Name = "QuestionItemLookUpEdit1";
+            this.QuestionItemLookUpEdit1.NullText = "";
+            this.QuestionItemLookUpEdit1.ValueMember = "Id";
             // 
             // QuestionFrm
             // 
@@ -668,6 +723,7 @@ namespace FinalTest
             this.dataLayoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl2)).EndInit();
             this.dataLayoutControl2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.answertxt.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IdTextEdit.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.questionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Keyword_IdTextEdit.Properties)).EndInit();
@@ -684,11 +740,15 @@ namespace FinalTest
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.answerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.keywordLookUpEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AnswerLookUpEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuestionItemLookUpEdit1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -720,8 +780,6 @@ namespace FinalTest
         private DevExpress.XtraBars.BarButtonItem barButtonItem5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem16;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl2;
         private DevExpress.XtraEditors.TextEdit IdTextEdit;
@@ -742,11 +800,17 @@ namespace FinalTest
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem4;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
-        private DevExpress.XtraGrid.Columns.GridColumn colText;
-        private DevExpress.XtraGrid.Columns.GridColumn colDateTime;
-        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit keywordLookUpEdit1;
         private DevExpress.XtraEditors.LookUpEdit catlookup;
         private System.Windows.Forms.BindingSource categoryBindingSource;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
+        private DevExpress.XtraEditors.MemoEdit answertxt;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
+        private System.Windows.Forms.BindingSource answerBindingSource;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit QuestionItemLookUpEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit keywordLookUpEdit1;
+        private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit AnswerLookUpEdit1;
+        private DevExpress.XtraGrid.Columns.GridColumn colText;
     }
 }
