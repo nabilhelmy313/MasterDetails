@@ -15,29 +15,11 @@ namespace CustomerService.Controllers
         // GET: Faq
         public ActionResult Index(string search)
         {
+            var c = db.Categories.ToList();
             if (search == null)
             {
                 List<FAQViewModel> fAQ = new List<FAQViewModel>();
-                var Q = db.Questions.OrderByDescending(a=>a.Id).ToList();
-                for (int i = 0; i < Q.Count(); i++)
-                {
-                    fAQ.Add(new FAQViewModel { Qid = Q[i].Id, QName = Q[i].Text });
-                }
-                
-                for (int i = 0; i < fAQ.Count(); i++)
-                {
-                    var x = fAQ[i].Qid;
-                    fAQ[i].Answers = db.Answers.Where(id => id.Question.Id == x).Select(a=>a.Text).ToList();
-                }
-                
-
-                return View(fAQ);
-            }
-            else
-            {
-                var Q = db.Questions.Where(s => s.Text.Contains(search) || search == null).OrderByDescending(a => a.Id).ToList();
-                List<FAQViewModel> fAQ = new List<FAQViewModel>();
-                
+                var Q = db.Questions.OrderByDescending(a => a.Id).ToList();
                 for (int i = 0; i < Q.Count(); i++)
                 {
                     fAQ.Add(new FAQViewModel { Qid = Q[i].Id, QName = Q[i].Text });
@@ -48,19 +30,115 @@ namespace CustomerService.Controllers
                     var x = fAQ[i].Qid;
                     fAQ[i].Answers = db.Answers.Where(id => id.Question.Id == x).Select(a => a.Text).ToList();
                 }
+                ViewBag.cat = c;
+
+
                 return View(fAQ);
             }
-            
-        }
-        public JsonResult GetQuestionbykey(int id)
-        {
-            var faq = new FAQViewModel
+            else
             {
-                Questions = db.Questions.Where(k => k.Keyword.Id == id).ToList()
-            };
-            List<Question> questions = new List<Question>();
-            questions = faq.Questions;
-            return Json(questions,JsonRequestBehavior.AllowGet);
+                var Q = db.Questions.Where(s => s.Text.Contains(search) || search == null).OrderByDescending(a => a.Id).ToList();
+                List<FAQViewModel> fAQ = new List<FAQViewModel>();
+
+                for (int i = 0; i < Q.Count(); i++)
+                {
+                    fAQ.Add(new FAQViewModel { Qid = Q[i].Id, QName = Q[i].Text });
+                }
+
+                for (int i = 0; i < fAQ.Count(); i++)
+                {
+                    var x = fAQ[i].Qid;
+                    fAQ[i].Answers = db.Answers.Where(id => id.Question.Id == x).Select(a => a.Text).ToList();
+                }
+                ViewBag.cat = c;
+                return View(fAQ);
+            }
+
+        }
+        //index Arabic
+        public ActionResult IndexAr(string search)
+        {
+            var c = db.Categories.ToList();
+            if (search == null)
+            {
+                List<FAQViewModel> fAQ = new List<FAQViewModel>();
+                var Q = db.Questions.OrderByDescending(a => a.Id).ToList();
+                for (int i = 0; i < Q.Count(); i++)
+                {
+                    fAQ.Add(new FAQViewModel { Qid = Q[i].Id, QName = Q[i].TextAr });
+                }
+
+                for (int i = 0; i < fAQ.Count(); i++)
+                {
+                    var x = fAQ[i].Qid;
+                    fAQ[i].Answers = db.Answers.Where(id => id.Question.Id == x).Select(a => a.TextAr).ToList();
+                }
+                ViewBag.cat = c;
+
+
+                return View(fAQ);
+            }
+            else
+            {
+                var Q = db.Questions.Where(s => s.TextAr.Contains(search) || search == null).OrderByDescending(a => a.Id).ToList();
+                List<FAQViewModel> fAQ = new List<FAQViewModel>();
+
+                for (int i = 0; i < Q.Count(); i++)
+                {
+                    fAQ.Add(new FAQViewModel { Qid = Q[i].Id, QName = Q[i].TextAr });
+                }
+
+                for (int i = 0; i < fAQ.Count(); i++)
+                {
+                    var x = fAQ[i].Qid;
+                    fAQ[i].Answers = db.Answers.Where(id => id.Question.Id == x).Select(a => a.TextAr).ToList();
+                }
+                ViewBag.cat = c;
+
+                return View(fAQ);
+            }
+        }
+        //public ActionResult CatSearch(int catid)
+        //{
+        //    var key = db.Keywords.Where(k => k.Category.Id == catid).ToList();
+        //    return View();
+        //}
+
+        public ActionResult GetQuestionbyCat(int catid)
+        {
+            var Q = db.Questions.Where(c => c.Category.Id == catid).OrderByDescending(a => a.Id).ToList();
+            List<FAQViewModel> fAQ = new List<FAQViewModel>();
+            for (int i = 0; i < Q.Count(); i++)
+            {
+                fAQ.Add(new FAQViewModel { Qid = Q[i].Id, QName = Q[i].Text });
+            }
+
+            for (int i = 0; i < fAQ.Count(); i++)
+            {
+                var x = fAQ[i].Qid;
+                fAQ[i].Answers = db.Answers.Where(id => id.Question.Id == x).Select(a => a.Text).ToList();
+            }
+
+            ViewBag.cat = db.Categories.ToList();
+            return View("Index",fAQ);
+        }
+        public ActionResult GetQuestionbyCatAr(int catid)
+        {
+            var Q = db.Questions.Where(c => c.Category.Id == catid).OrderByDescending(a => a.Id).ToList();
+            List<FAQViewModel> fAQ = new List<FAQViewModel>();
+            for (int i = 0; i < Q.Count(); i++)
+            {
+                fAQ.Add(new FAQViewModel { Qid = Q[i].Id, QName = Q[i].TextAr });
+            }
+
+            for (int i = 0; i < fAQ.Count(); i++)
+            {
+                var x = fAQ[i].Qid;
+                fAQ[i].Answers = db.Answers.Where(id => id.Question.Id == x).Select(a => a.TextAr).ToList();
+            }
+
+            ViewBag.cat = db.Categories.ToList();
+            return View("IndexAr", fAQ);
         }
         //public JsonResult GetAnswer(int id)
         //{

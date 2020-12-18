@@ -72,6 +72,7 @@ namespace FinalTest
                 branch.Address = AddressTextEdit.Text;
                 branch.Phone1 = Phone1TextEdit.Text;
                 branch.Phone2 = Phone2TextEdit.Text;
+                branch.NameAr = textnamear.Text;
                 if (string.IsNullOrEmpty( StartTimeDateEdit.Text))
                 {
                     XtraMessageBox.Show("START DATE MUST ENTER");

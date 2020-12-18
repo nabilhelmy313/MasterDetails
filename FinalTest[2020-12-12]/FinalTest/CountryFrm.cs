@@ -37,32 +37,33 @@ namespace FinalTest
 
         }
 
-       
+
 
         private void simpleButton6_Click(object sender, EventArgs e)
 
         {
-            
-                int id =int.Parse(IdTextEdit.Text);
-                if (db.Countries.Where(i => i.Id == id).Any())
-                {
-                    Country country = countryBindingSource.Current as Country;
-                    db.Countries.AddOrUpdate(country);
-                    db.SaveChanges();
-                    XtraMessageBox.Show("COUNTRY UPDATED SUCCUESSFULLY", "SUCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    RefershGrid();
-                }
-                else
-                {
-                    Country country = new Country();
-                    country.Name = NameTextEdit.Text;
-                    db.Countries.Add(country);
-                    db.SaveChanges();
-                    XtraMessageBox.Show("COUNTRY ADDED SUCCUESSFULLY","SUCESS",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    RefershGrid();
+
+            int id = int.Parse(IdTextEdit.Text);
+            if (db.Countries.Where(i => i.Id == id).Any())
+            {
+                Country country = countryBindingSource.Current as Country;
+                db.Countries.AddOrUpdate(country);
+                db.SaveChanges();
+                XtraMessageBox.Show("COUNTRY UPDATED SUCCUESSFULLY", "SUCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefershGrid();
+            }
+            else
+            {
+                Country country = new Country();
+                country.Name = NameTextEdit.Text;
+                country.NameAr = textEdit1.Text;
+                db.Countries.Add(country);
+                db.SaveChanges();
+                XtraMessageBox.Show("COUNTRY ADDED SUCCUESSFULLY", "SUCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefershGrid();
             }
 
-            
+
         }
 
         private void RefershGrid()
@@ -78,10 +79,10 @@ namespace FinalTest
 
 
 
-      
+
         private void gridControl1_MouseClick(object sender, MouseEventArgs e)
         {
-            
+
         }
 
         private void gridControl1_Click(object sender, EventArgs e)

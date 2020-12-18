@@ -12,6 +12,7 @@ namespace CustomerService.ViewModel
         public List<Keyword> Keywords { get; set; }
         public List<Question> Questions { get; set; }
         public List<string> Answers { get; set; }
+        public int CatId { get; set; }
         public string CatNAme { get; set; }
         public string KeyWord { get; set; }
         public int Counter { get; set; }

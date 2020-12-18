@@ -27,7 +27,7 @@ namespace FinalTest
         private void GridView1_Click(object sender, EventArgs e)
         {
             City city = gridView1.GetFocusedRow() as City;
-            if (city!=null)
+            if (city != null)
             {
                 cityBindingSource.DataSource = city;
             }
@@ -41,32 +41,33 @@ namespace FinalTest
         private void simpleButton6_Click(object sender, EventArgs e)
         {
 
-            
-                int id=int.Parse(IdTextEdit.Text);
-                if (db.Cities.Where(i=>i.Id==id).Any())
-                {
-                    City city = cityBindingSource.Current as City;
-                    db.Cities.AddOrUpdate(city);
-                    db.SaveChanges();
-                XtraMessageBox.Show("PLEASE SELECT COUNTRY", "ERROR,", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            int id = int.Parse(IdTextEdit.Text);
+            if (db.Cities.Where(i => i.Id == id).Any())
+            {
+                City city = cityBindingSource.Current as City;
+                db.Cities.AddOrUpdate(city);
+                db.SaveChanges();
+                XtraMessageBox.Show("CITY ADDED SUCCESSULLY", "SUCCESS,", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 RefershGrid();
-                }
-                else                 
+            }
+            else
+            {
+                City city = new City();
+                city.Name = NameTextEdit.Text;
+                city.NameAr = textEdit1.Text;
+                if (string.IsNullOrEmpty(CountryLookUpEdit.Text.ToString()))
                 {
-                    City city = new City();
-                    city.Name = NameTextEdit.Text;
-                    if (string.IsNullOrEmpty(CountryLookUpEdit.Text.ToString()))
-                    {
-                        return;
-                    }
-                    city.Country_Id = int.Parse(CountryLookUpEdit.EditValue.ToString());
-                    db.Cities.Add(city);
-                    db.SaveChanges();
-                        XtraMessageBox.Show("CITY ADDED SUCCESSULLY","SUCCESS," ,MessageBoxButtons.OK,MessageBoxIcon.Information);
-                    RefershGrid();
+                    return;
                 }
-              
-            
+                city.Country_Id = int.Parse(CountryLookUpEdit.EditValue.ToString());
+                db.Cities.Add(city);
+                db.SaveChanges();
+                XtraMessageBox.Show("CITY ADDED SUCCESSULLY", "SUCCESS,", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                RefershGrid();
+            }
+
+
         }
 
         private void CityFrm_Load(object sender, EventArgs e)
@@ -77,8 +78,8 @@ namespace FinalTest
         private void simpleButton7_Click(object sender, EventArgs e)
         {
             City city = cityBindingSource.Current as City;
-            var x= XtraMessageBox.Show("ARE YOU SURE TO DELETE","DELETE",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
-            if (x==DialogResult.Yes)
+            var x = XtraMessageBox.Show("ARE YOU SURE TO DELETE", "DELETE", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (x == DialogResult.Yes)
             {
                 db.Cities.Remove(city);
                 db.SaveChanges();
@@ -87,15 +88,15 @@ namespace FinalTest
 
         }
 
-       
 
-        
 
-        
 
-        
 
-       
+
+
+
+
+
 
         private void simpleButton1_Click_1(object sender, EventArgs e)
         {

@@ -14,6 +14,7 @@ namespace CustomerService.ViewModel
         public List<Employee> Employees { get; set; }
         public int ID { get; set; }
         public string Name { get; set; }
+        public string EmpNameAr { get; set; }
         public string Address { get; set; }
         public string StartTime { get; set; }
         public string EndTime { get; set; }
@@ -28,5 +29,6 @@ namespace CustomerService.ViewModel
         public string EmpPhoto { get; internal set; }
         public string EmpRole { get; internal set; }
         public string EmpDept { get; internal set; }
+        public string NameAr { get; internal set; }
     }
 }

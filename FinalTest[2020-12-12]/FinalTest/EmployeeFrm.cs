@@ -73,6 +73,7 @@ namespace FinalTest
                 employee.Phone1 = Phone1TextEdit.Text;
                 employee.Phone2 = Phone2TextEdit.Text;
                 employee.Role = RoleTextEdit.Text;
+                employee.NameAr = textEdit1.Text;
                 if (!string.IsNullOrEmpty(Branch_IdLookUpEdit.Text.ToString()))
                 {
                     employee.Branch_Id = int.Parse(Branch_IdLookUpEdit.EditValue.ToString());

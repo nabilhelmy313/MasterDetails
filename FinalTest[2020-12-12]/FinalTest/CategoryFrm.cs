@@ -150,11 +150,12 @@ namespace FinalTest
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            int x = int.Parse(IdTextEdit.Text);
+            int x = int.Parse(txtid.Text);
             if (db.Categories.Where(id => id.Id ==x).Any())
             {
                 Category category = categoryBindingSource.Current as Category;
                 category.Name = NameTextEdit.Text;
+                category.NameAr = txtarname.Text;
                 db.Categories.AddOrUpdate(category);
                 db.SaveChanges();
                 XtraMessageBox.Show("CATEGORY SAVED SUCCUESSFULLY");
@@ -164,6 +165,7 @@ namespace FinalTest
             {
                 Category category = new Category();
                 category.Name = NameTextEdit.Text;
+                category.NameAr = txtarname.Text;
                 db.Categories.Add(category);
                 db.SaveChanges();
                 XtraMessageBox.Show("CATEGORY SAVED SUCCUESSFULLY");
@@ -218,6 +220,11 @@ namespace FinalTest
                 categoryBindingSource.DataSource=category;
                 
             }
+        }
+
+        private void CategoryFrm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

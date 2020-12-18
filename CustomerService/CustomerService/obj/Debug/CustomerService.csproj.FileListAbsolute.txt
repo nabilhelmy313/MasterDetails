@@ -165,6 +165,7 @@ E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.CopyComplete
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.dll
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.pdb
-E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.FAQclasses.resources
-E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.GenerateResource.cache
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csprojAssemblyReference.cache
+E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.adddarabic.resources
+E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.csproj.GenerateResource.cache
+E:\work\MasterDetails\CustomerService\CustomerService\obj\Debug\CustomerService.Migrations.addcateinquesion.resources

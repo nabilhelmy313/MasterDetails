@@ -25,7 +25,6 @@ namespace FinalTest
         void RefreshGrid()
         {
             gridControl1.DataSource = db.Questions.ToList();
-            keywordBindingSource.DataSource = db.Keywords.ToList();
             categoryBindingSource.DataSource = db.Categories.ToList();
             answerBindingSource.DataSource = db.Categories.ToList();
         }
@@ -207,21 +206,7 @@ namespace FinalTest
                     question.TextAr = qartext.Text;
                     question.DateTime = DateTime.Now;
                     question.IsUpdated = true;
-                    if (string.IsNullOrEmpty(Keyword_IdTextEdit.Text))
-                    {
-                        Keyword keyword = new Keyword()
-                        {
-                            Counter = 0,
-                            Word = TextTextEdit.Text.Substring(0, TextTextEdit.Text.IndexOf(" ")),
-                            Category_Id = int.Parse(catlookup.EditValue.ToString())
-                        };
-                        question.Keyword = keyword;
-                        db.Keywords.Add(keyword);
-                    }
-                    else
-                    {
-                        question.Keyword_Id = int.Parse(Keyword_IdTextEdit.EditValue.ToString());
-                    }
+                    question.Category_Id =int.Parse(catlookup.EditValue.ToString());
                     
                     db.Questions.AddOrUpdate(question);
                     db.SaveChanges();
@@ -255,6 +240,7 @@ namespace FinalTest
                             answer.Text = aartext.Text;
                             answer.IsUpdated = false;
                             answer.DateTime = DateTime.Now;
+                            question.Category_Id = int.Parse(catlookup.EditValue.ToString());
                             db.Answers.Add(answer);
                             db.SaveChanges();
                         }
@@ -276,21 +262,7 @@ namespace FinalTest
                     question.TextAr = qartext.Text;
                     question.DateTime = DateTime.Now;
                     question.IsUpdated = false;
-                    if (string.IsNullOrEmpty(Keyword_IdTextEdit.Text))
-                    {
-                        Keyword keyword = new Keyword()
-                        {
-                            Counter = 0,
-                            Word = TextTextEdit.Text.Substring(0, TextTextEdit.Text.IndexOf(" ")),
-                            Category_Id = int.Parse(catlookup.EditValue.ToString())
-                        };
-                        question.Keyword = keyword;
-                        db.Keywords.Add(keyword);
-                    }
-                    else
-                    {
-                        question.Keyword_Id = int.Parse(Keyword_IdTextEdit.EditValue.ToString());
-                    }
+                    question.Category_Id = int.Parse(catlookup.EditValue.ToString());
                     
                     db.Questions.Add(question);
                     db.SaveChanges();
@@ -346,10 +318,6 @@ namespace FinalTest
 
         private void textEdit1_EditValueChanged(object sender, EventArgs e)
         {
-            var look = sender as LookUpEdit;
-            var row = look.GetSelectedDataRow() as Category;
-            var id = row.Id;
-            keywordBindingSource.DataSource = db.Keywords.Where(i => i.Category_Id == id).ToList();
         }
 
         private void gridControl1_Click(object sender, EventArgs e)

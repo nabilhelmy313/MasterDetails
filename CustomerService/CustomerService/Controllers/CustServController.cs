@@ -25,6 +25,17 @@ namespace CustomerService.Controllers
             };
             return View(country);
         }
+        public ActionResult IndexAr()
+        {
+            CustServViewModel country = new CustServViewModel
+            {
+                Country = db.Countries.ToList(),
+                City = db.Cities.ToList(),
+                Branch = db.Branches.ToList(),
+                Employees = db.Employees.ToList()
+            };
+            return View(country);
+        }
         public JsonResult GetCities(int id)
         {
             var cities = new CustServViewModel
@@ -50,6 +61,7 @@ namespace CustomerService.Controllers
                 {
                     ID=bran[i].Id,
                     Name=bran[i].Name,
+                    NameAr=bran[i].NameAr,
                     StartTime = bran[i].StartTime.ToString("hh:mm tt"),
                     EndTime = bran[i].EndTime.ToString("hh:mm tt"),
                     Address=bran[i].Address,
@@ -75,6 +87,7 @@ namespace CustomerService.Controllers
                 list.Add(new CustServViewModel
                 {
                     EmpName = Emp[i].Name,
+                    EmpNameAr=Emp[i].NameAr,
                     EmpPhone1=Emp[i].Phone1,
                     EmpPhone2=Emp[i].Phone2,
                     EmpPhoto=Emp[i].Photo,

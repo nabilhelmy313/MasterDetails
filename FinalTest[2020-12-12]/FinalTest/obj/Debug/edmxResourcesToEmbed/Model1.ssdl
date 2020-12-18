@@ -102,6 +102,7 @@
     <Property Name="IsUpdated" Type="bit" Nullable="false" />
     <Property Name="Keyword_Id" Type="int" />
     <Property Name="TextAr" Type="nvarchar(max)" />
+    <Property Name="Category_Id" Type="int" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -185,6 +186,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_dbo_Questions_dbo_Categories_Category_Id">
+    <End Role="Categories" Type="Self.Categories" Multiplicity="0..1" />
+    <End Role="Questions" Type="Self.Questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Questions">
+        <PropertyRef Name="Category_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_dbo_Questions_dbo_Keywords_Keyword_Id">
     <End Role="Keywords" Type="Self.Keywords" Multiplicity="0..1" />
     <End Role="Questions" Type="Self.Questions" Multiplicity="*" />
@@ -232,6 +245,10 @@
     <AssociationSet Name="FK_dbo_Keywords_dbo_Categories_Category_Id" Association="Self.FK_dbo_Keywords_dbo_Categories_Category_Id">
       <End Role="Categories" EntitySet="Categories" />
       <End Role="Keywords" EntitySet="Keywords" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Questions_dbo_Categories_Category_Id" Association="Self.FK_dbo_Questions_dbo_Categories_Category_Id">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Questions" EntitySet="Questions" />
     </AssociationSet>
     <AssociationSet Name="FK_dbo_Questions_dbo_Keywords_Keyword_Id" Association="Self.FK_dbo_Questions_dbo_Keywords_Keyword_Id">
       <End Role="Keywords" EntitySet="Keywords" />

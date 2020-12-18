@@ -133,9 +133,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202012120843070_FAQclasses.cs" />
-    <Compile Include="Migrations\202012120843070_FAQclasses.designer.cs">
-      <DependentUpon>202012120843070_FAQclasses.cs</DependentUpon>
+    <Compile Include="Migrations\202012162012414_addd-arabic.cs" />
+    <Compile Include="Migrations\202012162012414_addd-arabic.Designer.cs">
+      <DependentUpon>202012162012414_addd-arabic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202012180407030_addcateinquesion.cs" />
+    <Compile Include="Migrations\202012180407030_addcateinquesion.Designer.cs">
+      <DependentUpon>202012180407030_addcateinquesion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Answer.cs" />
@@ -206,6 +210,10 @@
     <Content Include="Views\CustServ\_BindingPartialView.cshtml" />
     <Content Include="Views\Faq\Index.cshtml" />
     <Content Include="Views\Faq\_AJAXPartialView.cshtml" />
+    <Content Include="Views\Shared\_LayoutAr.cshtml" />
+    <Content Include="Views\Faq\IndexAr.cshtml" />
+    <Content Include="Views\CustServ\IndexAr.cshtml" />
+    <Content Include="Views\CustServ\_ArbindingPartialViw.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -224,8 +232,11 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202012120843070_FAQclasses.resx">
-      <DependentUpon>202012120843070_FAQclasses.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012162012414_addd-arabic.resx">
+      <DependentUpon>202012162012414_addd-arabic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012180407030_addcateinquesion.resx">
+      <DependentUpon>202012180407030_addcateinquesion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

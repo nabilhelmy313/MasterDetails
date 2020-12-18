@@ -115,6 +115,7 @@
     <EntitySetMapping Name="Questions">
       <EntityTypeMapping TypeName="custservModel.Question">
         <MappingFragment StoreEntitySet="Questions">
+          <ScalarProperty Name="Category_Id" ColumnName="Category_Id" />
           <ScalarProperty Name="TextAr" ColumnName="TextAr" />
           <ScalarProperty Name="Keyword_Id" ColumnName="Keyword_Id" />
           <ScalarProperty Name="IsUpdated" ColumnName="IsUpdated" />

@@ -23,6 +23,7 @@
         <AssociationConnector Association="custservModel.FK_dbo_Answers_dbo_Questions_Question_Id" />
         <AssociationConnector Association="custservModel.FK_dbo_Keywords_dbo_Categories_Category_Id" />
         <AssociationConnector Association="custservModel.FK_dbo_Questions_dbo_Keywords_Keyword_Id" />
+        <AssociationConnector Association="custservModel.FK_dbo_Questions_dbo_Categories_Category_Id" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

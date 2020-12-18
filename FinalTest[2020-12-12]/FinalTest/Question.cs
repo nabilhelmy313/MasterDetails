@@ -26,9 +26,11 @@ namespace FinalTest
         public bool IsUpdated { get; set; }
         public Nullable<int> Keyword_Id { get; set; }
         public string TextAr { get; set; }
+        public Nullable<int> Category_Id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Answer> Answers { get; set; }
         public virtual Keyword Keyword { get; set; }
+        public virtual Category Category { get; set; }
     }
 }

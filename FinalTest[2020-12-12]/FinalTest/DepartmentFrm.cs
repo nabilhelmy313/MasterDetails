@@ -181,11 +181,7 @@ namespace FinalTest
         private void gridControl1_Click(object sender, EventArgs e)
         {
 
-            Department department = gridView1.GetFocusedRow() as Department;
-            if (department != null)
-            {
-                departmentBindingSource.DataSource = department;
-            }
+            
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
@@ -203,6 +199,7 @@ namespace FinalTest
             {
                 Department department = new Department();
                 department.Name = NameTextEdit.Text;
+                department.NameAr = textEdit1.Text;
                 db.Departments.Add(department);
                 db.SaveChanges();
                 XtraMessageBox.Show("DEPARTMENT ADDED SUCCUESSFULLY", "SUCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -228,6 +225,15 @@ namespace FinalTest
                 XtraMessageBox.Show("CAN'T DELETE THIS DEPARTMENT BECAUSE IT HAS EMPLOYEE IN IT","ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             
+        }
+
+        private void gridControl1_Click_1(object sender, EventArgs e)
+        {
+            Department department = gridView1.GetFocusedRow() as Department;
+            if (department != null)
+            {
+                departmentBindingSource.DataSource = department;
+            }
         }
     }
 }
