@@ -11,7 +11,9 @@ namespace CustomerService.Models
         [Key]
         public int Id { get; set; }
         public string Name { get; set; }
+        public string NameAr { get; set; }
         public ICollection<Keyword> Keywords { get; set; }
+        public ICollection<Question> Questions { get; set; }
 
     }
 }

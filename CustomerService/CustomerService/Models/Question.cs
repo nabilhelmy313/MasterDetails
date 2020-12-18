@@ -10,9 +10,11 @@ namespace CustomerService.Models
         [Key]
         public int Id { get; set; }
         public string Text { get; set; }
+        public string TextAr { get; set; }
         public DateTime DateTime{ get; set; }
         public bool IsUpdated { get; set; }
         public Keyword Keyword { get; set; }
+        public Category Category { get; set; }
         public ICollection<Answer> Answers{ get; set; }
     }
 }
