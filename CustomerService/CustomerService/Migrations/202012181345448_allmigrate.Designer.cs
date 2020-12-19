@@ -7,13 +7,13 @@ namespace CustomerService.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class adddarabic : IMigrationMetadata
+    public sealed partial class allmigrate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(adddarabic));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(allmigrate));
         
         string IMigrationMetadata.Id
         {
-            get { return "202012162012414_addd-arabic"; }
+            get { return "202012181345448_allmigrate"; }
         }
         
         string IMigrationMetadata.Source

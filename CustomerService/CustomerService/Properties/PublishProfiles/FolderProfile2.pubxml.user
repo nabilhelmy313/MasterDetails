@@ -14,10 +14,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/26/2020 14:03:20</publishTime>
     </File>
     <File Include="bin/CustomerService.dll">
-      <publishTime>12/16/2020 12:53:58</publishTime>
+      <publishTime>12/18/2020 16:09:51</publishTime>
     </File>
     <File Include="bin/CustomerService.pdb">
-      <publishTime>12/16/2020 12:53:58</publishTime>
+      <publishTime>12/18/2020 16:09:51</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>03/02/2015 09:32:26</publishTime>
@@ -337,14 +337,23 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
     <File Include="Views/CustServ/Index.cshtml">
       <publishTime>11/28/2020 17:01:21</publishTime>
     </File>
+    <File Include="Views/CustServ/IndexAr.cshtml">
+      <publishTime>12/18/2020 15:39:31</publishTime>
+    </File>
+    <File Include="Views/CustServ/_ArbindingPartialViw.cshtml">
+      <publishTime>12/18/2020 15:39:31</publishTime>
+    </File>
     <File Include="Views/CustServ/_BindingPartialView.cshtml">
       <publishTime>12/15/2020 11:25:34</publishTime>
     </File>
     <File Include="Views/Faq/Index.cshtml">
-      <publishTime>12/16/2020 14:06:15</publishTime>
+      <publishTime>12/18/2020 15:39:31</publishTime>
+    </File>
+    <File Include="Views/Faq/IndexAr.cshtml">
+      <publishTime>12/18/2020 16:07:31</publishTime>
     </File>
     <File Include="Views/Faq/_AJAXPartialView.cshtml">
-      <publishTime>12/16/2020 01:08:12</publishTime>
+      <publishTime>12/18/2020 15:39:31</publishTime>
     </File>
     <File Include="Views/Home/About.cshtml">
       <publishTime>11/26/2020 14:03:18</publishTime>
@@ -359,7 +368,10 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/26/2020 14:03:18</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>12/15/2020 10:47:55</publishTime>
+      <publishTime>12/18/2020 15:39:31</publishTime>
+    </File>
+    <File Include="Views/Shared/_LayoutAr.cshtml">
+      <publishTime>12/18/2020 15:39:31</publishTime>
     </File>
     <File Include="Views/Web.config">
       <publishTime>11/26/2020 14:03:18</publishTime>
@@ -368,7 +380,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>11/26/2020 14:03:18</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>12/16/2020 12:53:59</publishTime>
+      <publishTime>12/18/2020 16:09:52</publishTime>
     </File>
   </ItemGroup>
 </Project>

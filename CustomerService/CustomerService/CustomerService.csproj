@@ -133,13 +133,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202012162012414_addd-arabic.cs" />
-    <Compile Include="Migrations\202012162012414_addd-arabic.Designer.cs">
-      <DependentUpon>202012162012414_addd-arabic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202012180407030_addcateinquesion.cs" />
-    <Compile Include="Migrations\202012180407030_addcateinquesion.Designer.cs">
-      <DependentUpon>202012180407030_addcateinquesion.cs</DependentUpon>
+    <Compile Include="Migrations\202012181345448_allmigrate.cs" />
+    <Compile Include="Migrations\202012181345448_allmigrate.Designer.cs">
+      <DependentUpon>202012181345448_allmigrate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Answer.cs" />
@@ -232,11 +228,8 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202012162012414_addd-arabic.resx">
-      <DependentUpon>202012162012414_addd-arabic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202012180407030_addcateinquesion.resx">
-      <DependentUpon>202012180407030_addcateinquesion.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012181345448_allmigrate.resx">
+      <DependentUpon>202012181345448_allmigrate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

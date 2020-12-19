@@ -3,22 +3,24 @@
 <div class="">
     <!-- CATEGORIES -->
     <div class="row m-0 bg-dark p-2">
-        <div class="col-sm-2 mt-3">
-            <h6 style="font-weight: bold;color: white;">SHORT CUTS WORDS</h6>
-        </div>
-        @*@foreach (var item in Model.Categories)
+        @foreach (var item in ViewBag.cat)
         {
-            <div class="col-sm-3">
-                <button id="@item.Id" value="@item.Id" data-topass="@item.Id" class="btn btn-outline-light btn-block p-2 cat">
-                    <h6><i class="fas fa-users mr-2"></i>@item.Name</h6>
-                </button>
-            </div>
-        }*@
+        <div class="col-sm">
+            <form method="get" action="@Url.Action("GetQuestionbyCat","faq")">
+                <div class="col-sm">
+                    <input type="text" id="catid" name="catid" value="@item.Id" hidden />
+                    <button type="submit" id="@item.Id" data-topass="@item.Id" class="btn btn-outline-light btn-block p-2 cat">
+                        <h5><i class="fas fa-users mr-2"></i>@item.Name</h5>
+                    </button>
+                </div>
+            </form>
+        </div>
+        }
 
-        <div class="col-sm-4 ">
-            <div class="row mt-1 form-inline">
+
+        <div class="col-sm ">
+            <div class="row mt-1 form-inline ">
                 <form method="get" action="@Url.Action("index", "faq")">
-                    <label for="search">Search</label>
                     <input type="text" placeholder="SEARCH FOR QUESTION ? ..." class="form-control p-2 mr-2" name="search" id="search" />
                     <button type="submit" class="btn btn-warning p-2"><i class="fa fa-search"></i> SEARCH</button>
                 </form>
@@ -34,7 +36,7 @@
             <!-- FAQ HEADER -->
             <div class="bg-white card-header my-3 ">
                 <div class="container">
-                    <h6 style="font-weight: bold;"><i class="fas fa-question-circle fa-lg mr-2"></i>FREQUENTLY ASKED QUESTIONS</h6>
+                    <h5 style="font-weight: bold;text-align:center"><i class="fas fa-question-circle fa-lg mr-2"></i>FREQUENTLY ASKED QUESTIONS</h5>
                 </div>
             </div>
             <!--END FAQ HEADER -->
@@ -48,11 +50,11 @@
                         <!-- QUESTION -->
                         <div>
 
-                            <div class="card-header bg-white" id="@item.Qid">
+                            <div class="card-header bg-white">
                                 <div>
                                     <h5 class="mb-0">
-                                        <button id="@item.Qid" value="@item.Qid" data-topass="@item.Qid" class="btn btn-xl btn-block question" style="background-color: white;text-align: left;color: #989FA5;"
-                                                data-toggle="colapse" data-target="#@(item.Qid)" role="button">
+                                        <button data-topass="@item.Qid" class="btn btn-xl btn-block question" style="background-color: white;text-align: left;color: #989FA5;"
+                                                role="button">
                                             <div class="d-flex">
                                                 <h6 class="mr-auto"><i class="far fa-question-circle mr-2 fa-lg"></i>@item.QName</h6>
                                                 <h6 class=""><i class="fas fa-chevron-circle-down fa-lg"></i></h6>
@@ -66,12 +68,12 @@
                         <!--END QUESTION -->
                         <!-- ANSWER -->
 
-                        <div id="answer">
+                        <div class="collapse" id="@("a"+item.Qid)">
                             <ul class=" container list-unstyled">
                                 @foreach (var answer in item.Answers)
                                 {
                                     var text= answer.Replace(".", "<br><i style='color: #E0A800;' class='fas fa-angle-double-right fa-lg mr-1'></i>");
-                                <li class="py-2"><i style="color: #E0A800;" class="fas fa-angle-double-right fa-lg mr-1"></i>@Html.Raw(HttpUtility.HtmlDecode(text))</li>
+                                <li class="py-2"><h5><i style="color: #E0A800;" class="fas fa-angle-double-right fa-lg mr-1"></i>@Html.Raw(HttpUtility.HtmlDecode(text))</h5></li>
                                 }
                             </ul>
                         </div>

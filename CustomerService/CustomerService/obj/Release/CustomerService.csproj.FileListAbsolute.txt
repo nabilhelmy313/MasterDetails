@@ -82,4 +82,4 @@ E:\work\MasterDetails\CustomerService\CustomerService\obj\Release\CustomerServic
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Release\CustomerService.csproj.CopyComplete
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Release\CustomerService.dll
 E:\work\MasterDetails\CustomerService\CustomerService\obj\Release\CustomerService.pdb
-E:\work\MasterDetails\CustomerService\CustomerService\obj\Release\CustomerService.Migrations.FAQclasses.resources
+E:\work\MasterDetails\CustomerService\CustomerService\obj\Release\CustomerService.Migrations.allmigrate.resources
