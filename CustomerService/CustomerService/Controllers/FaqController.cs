@@ -58,7 +58,7 @@ namespace CustomerService.Controllers
         //index Arabic
         public ActionResult IndexAr(string search)
         {
-            var c = db.Categories.ToList();
+                var c = db.Categories.ToList();
             if (search == null)
             {
                 List<FAQViewModel> fAQ = new List<FAQViewModel>();

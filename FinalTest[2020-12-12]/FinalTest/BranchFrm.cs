@@ -65,7 +65,7 @@ namespace FinalTest
                 db.SaveChanges();
                 RefreshGrid();
             }
-            else if (db.Branches.Where(i => i.Id != id).Any())
+            else
             {
                 Branch branch = new Branch();
                 branch.Name = NameTextEdit.Text;
@@ -85,9 +85,9 @@ namespace FinalTest
                     return;
                 }
                 branch.EndTime = DateTime.Parse(EndTimeDateEdit.EditValue.ToString());
-                if (!string.IsNullOrEmpty(CityLookUpEdit.Text))
+                if (!string.IsNullOrEmpty(City_IdLookUpEdit.Text))
                 {
-                    branch.City_Id = int.Parse(CityLookUpEdit.EditValue.ToString());
+                    branch.City_Id = int.Parse(City_IdLookUpEdit.EditValue.ToString());
                 }
                 db.Branches.Add(branch);
                 db.SaveChanges();
